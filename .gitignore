@@ -1,0 +1,6 @@
+node_modules
+.npm-debug.log
+tmp
+.sass-cahce
+*.css.map
+.DS_Store
