@@ -281,16 +281,39 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #666;
   font-family: "Oxygen", sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "Roboto", sans-serif;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+  color: #666;
+  text-decoration: none;
+}
+h1 a:hover, h1 a:visited, h2 a:hover, h2 a:visited, h3 a:hover, h3 a:visited, h4 a:hover, h4 a:visited {
+  color: #666;
+}
+
+h1 {
+  font-size: 34.2px;
+  font-size: 2.1375rem;
+}
+
+h2 {
+  font-size: 30.6px;
+  font-size: 1.9125rem;
+}
+
+h3 {
+  font-size: 23.4px;
+  font-size: 1.4625rem;
 }
 
 p {
@@ -312,8 +335,8 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 16.875px;
+  font-size: 1.05469rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -323,8 +346,8 @@ pre {
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 16.875px;
+  font-size: 1.05469rem;
 }
 
 abbr, acronym {
@@ -425,8 +448,8 @@ input[type="submit"] {
   background: #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 13.5px;
+  font-size: 0.84375rem;
   line-height: 1;
   padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
@@ -522,13 +545,14 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #90ee7e;
+  text-decoration: none;
 }
 a:visited {
-  color: purple;
+  color: #90ee7e;
 }
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #f90;
 }
 a:focus {
   outline: thin dotted;
@@ -636,8 +660,8 @@ a:hover, a:active {
   clip: auto !important;
   color: #21759b;
   display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 15.75px;
+  font-size: 0.98438rem;
   font-weight: bold;
   height: auto;
   left: 5px;
@@ -870,6 +894,8 @@ object {
 /*--------------------------------------------------------------
 # Layout flex
 --------------------------------------------------------------*/
+/**
+
 .site-content {
   display: flex;
 }
@@ -881,3 +907,7 @@ object {
 .site-content .widget-area {
   flex: 1;
 }
+*/
+/*--------------------------------------------------------------
+# Layout flex
+--------------------------------------------------------------*/

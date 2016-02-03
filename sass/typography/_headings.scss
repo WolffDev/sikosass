@@ -2,3 +2,21 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: "Roboto", sans-serif;
 }
+
+h1 a, h2 a, h3 a, h4 a {
+  color: $color__text-main;
+	text-decoration: none;
+  &:hover, &:visited {
+    color: $color__text-main;
+  }
+}
+
+h1 {
+	@include font-size(1.9);
+}
+h2 {
+	@include font-size(1.7);
+}
+h3 {
+	@include font-size(1.3);
+}

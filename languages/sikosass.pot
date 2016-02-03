@@ -15,7 +15,7 @@ msgstr ""
 #: 404.php:17
 #@ _s
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "BLAH BLAH BLAH BL"
 
 #: 404.php:21
 #@ _s
