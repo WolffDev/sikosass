@@ -575,12 +575,18 @@ a:hover, a:active {
   list-style: none;
   margin: 0;
   padding-left: 0;
+  max-width: 1200px;
+}
+.main-navigation ul li {
+  padding: 6px;
+}
+.main-navigation ul li:hover {
+  background-color: #f90;
 }
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
   position: absolute;
-  top: 1.5em;
+  top: 2.3em;
   left: -999em;
   z-index: 99999;
 }
@@ -592,7 +598,8 @@ a:hover, a:active {
   left: 100%;
 }
 .main-navigation ul ul a {
-  width: 200px;
+  width: 150px;
+  color: #666;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
@@ -605,15 +612,13 @@ a:hover, a:active {
 .main-navigation li ul {
   background-color: #008cba;
 }
-.main-navigation li li {
-  margin: 10px 10px 0px;
-}
-.main-navigation li li:last-child {
-  margin-bottom: 10px;
+.main-navigation li li:first-child {
+  padding-top: 10px;
 }
 .main-navigation a {
   display: block;
   text-decoration: none;
+  color: #666;
 }
 
 /* Small menu. */
@@ -640,6 +645,21 @@ a:hover, a:active {
   float: right;
   text-align: right;
   width: 50%;
+}
+
+#primary-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #008cba;
 }
 
 /*--------------------------------------------------------------
@@ -794,7 +814,7 @@ a:hover, a:active {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #00af62;
-  box-shadow: 12px 0 15px -4px rgba(42, 38, 38, 0.54), -12px 0 8px -4px rgba(42, 38, 38, 0.54);
+  box-shadow: 8px 0 15px -4px rgba(42, 38, 38, 0.54), -8px 0 8px -4px rgba(42, 38, 38, 0.54);
 }
 
 .content-area {
