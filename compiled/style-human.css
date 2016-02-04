@@ -281,7 +281,7 @@ button,
 input,
 select,
 textarea {
-  color: #666;
+  color: #fff;
   font-family: "Oxygen", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -294,11 +294,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 a, h2 a, h3 a, h4 a {
-  color: #666;
+  color: #fff;
   text-decoration: none;
 }
 h1 a:hover, h1 a:visited, h2 a:hover, h2 a:visited, h3 a:hover, h3 a:visited, h4 a:hover, h4 a:visited {
-  color: #666;
+  color: #fff;
 }
 
 h1 {
@@ -569,12 +569,14 @@ a:hover, a:active {
   display: block;
   float: left;
   width: 100%;
+  background-color: #008cba;
+  margin-top: -6px;
 }
 .main-navigation ul {
   display: none;
   list-style: none;
-  margin: 0;
-  padding-left: 0;
+  margin: 0 auto;
+  padding: 0 20px 0;
   max-width: 1200px;
 }
 .main-navigation ul li {
@@ -586,9 +588,10 @@ a:hover, a:active {
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 2.3em;
+  top: 2.25em;
   left: -999em;
   z-index: 99999;
+  padding: 0;
 }
 .main-navigation ul ul ul {
   left: -999em;
@@ -599,7 +602,7 @@ a:hover, a:active {
 }
 .main-navigation ul ul a {
   width: 150px;
-  color: #666;
+  color: #fff;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
@@ -618,7 +621,7 @@ a:hover, a:active {
 .main-navigation a {
   display: block;
   text-decoration: none;
-  color: #666;
+  color: #fff;
 }
 
 /* Small menu. */
@@ -754,68 +757,6 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-.sticky {
-  display: block;
-}
-
-.hentry {
-  margin: 0 0 1.5em;
-}
-
-.byline,
-.updated:not(.published) {
-  display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-  display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
-}
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em;
-}
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-.comment-content a {
-  word-wrap: break-word;
-}
-
-.bypostauthor {
-  display: block;
-}
-
-/*--------------------------------------------------------------
-## Content
---------------------------------------------------------------*/
-#content {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #00af62;
-  box-shadow: 8px 0 15px -4px rgba(42, 38, 38, 0.54), -8px 0 8px -4px rgba(42, 38, 38, 0.54);
-}
-
-.content-area {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #008cba;
-}
-
-/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
@@ -909,6 +850,121 @@ object {
 
 .gallery-caption {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block;
+}
+
+.hentry {
+  margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.site-header {
+  height: 100%;
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.site-branding {
+  position: absolute;
+  max-width: 1200px;
+  top: 0;
+  margin: 0 auto;
+}
+
+.site-logo {
+  position: relative;
+}
+
+.site-logo a {
+  position: absolute;
+  z-index: 10;
+  top: 1em;
+  left: 1em;
+  display: block;
+  width: 6em;
+  height: 4em;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.5;
+}
+.site-logo a:hover, .site-logo a:focus {
+  background-color: #f90;
+}
+
+.site-firstletter {
+  font-family: "Roboto", sans-serif;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.site-firstletter:hover, .site-firstletter:focus {
+  background: #00af62;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+## Content
+--------------------------------------------------------------*/
+#page {
+  box-shadow: 8px 0 15px -4px rgba(42, 38, 38, 0.54), -8px 0 8px -4px rgba(42, 38, 38, 0.54);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #00af62;
+}
+
+.content-area {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #008cba;
 }
 
 /*--------------------------------------------------------------

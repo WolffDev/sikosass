@@ -1,0 +1,46 @@
+.site-header {
+  height: 100%;
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.site-branding {
+  position: absolute;
+  max-width: 1200px;
+  top: 0;
+  margin: 0 auto;
+}
+
+.site-logo {
+  position: relative;;
+}
+
+.site-logo a {
+  position: absolute;
+  z-index: 10;
+  top: 1em;
+  left: 1em;
+  display: block;
+  width: 6em;
+  height: 4em;
+  color: $color__text-main;
+
+  text-decoration: none;
+  line-height: 1.5;
+  &:hover,
+  &:focus {
+    background-color: $color__link-hover;
+  }
+}
+
+.site-firstletter {
+  font-family: "Roboto", sans-serif;
+  @include font-size(1.2);
+  text-align: center;
+  &:hover,
+  &:focus {
+    background: $color__background-content;
+    color: $color__text-main;
+  }
+}

@@ -1,8 +1,13 @@
+#page {
+  box-shadow: $boxShadow__content;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 #content {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: $color__background-content;
-  box-shadow: 8px 0 15px -4px rgba(42,38,38,.54), -8px 0 8px -4px rgba(42,38,38,.54);
 }
 
 .content-area {
