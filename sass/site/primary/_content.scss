@@ -1,0 +1,12 @@
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $color__background-content;
+  box-shadow: 12px 0 15px -4px rgba(42,38,38,.54), -12px 0 8px -4px rgba(42,38,38,.54);
+}
+
+.content-area {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: $color__background-area;
+}

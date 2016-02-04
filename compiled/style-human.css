@@ -283,8 +283,8 @@ select,
 textarea {
   color: #666;
   font-family: "Oxygen", sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -302,18 +302,18 @@ h1 a:hover, h1 a:visited, h2 a:hover, h2 a:visited, h3 a:hover, h3 a:visited, h4
 }
 
 h1 {
-  font-size: 34.2px;
-  font-size: 2.1375rem;
+  font-size: 32px;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 30.6px;
-  font-size: 1.9125rem;
+  font-size: 27.2px;
+  font-size: 1.7rem;
 }
 
 h3 {
-  font-size: 23.4px;
-  font-size: 1.4625rem;
+  font-size: 20.8px;
+  font-size: 1.3rem;
 }
 
 p {
@@ -335,8 +335,8 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 16.875px;
-  font-size: 1.05469rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -346,8 +346,8 @@ pre {
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 16.875px;
-  font-size: 1.05469rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 abbr, acronym {
@@ -448,8 +448,8 @@ input[type="submit"] {
   background: #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
-  font-size: 13.5px;
-  font-size: 0.84375rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1;
   padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
@@ -602,6 +602,15 @@ a:hover, a:active {
   float: left;
   position: relative;
 }
+.main-navigation li ul {
+  background-color: #008cba;
+}
+.main-navigation li li {
+  margin: 10px 10px 0px;
+}
+.main-navigation li li:last-child {
+  margin-bottom: 10px;
+}
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -613,15 +622,6 @@ a:hover, a:active {
   display: block;
 }
 
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .main-navigation ul {
-    display: block;
-  }
-}
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -660,8 +660,8 @@ a:hover, a:active {
   clip: auto !important;
   color: #21759b;
   display: block;
-  font-size: 15.75px;
-  font-size: 0.98438rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   height: auto;
   left: 5px;
@@ -788,6 +788,22 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Content
+--------------------------------------------------------------*/
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #00af62;
+  box-shadow: 12px 0 15px -4px rgba(42, 38, 38, 0.54), -12px 0 8px -4px rgba(42, 38, 38, 0.54);
+}
+
+.content-area {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #008cba;
+}
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
@@ -903,3 +919,15 @@ object {
 /*--------------------------------------------------------------
 # Layout flex
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Layout flex
+--------------------------------------------------------------*/
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-navigation ul {
+    display: block;
+  }
+}

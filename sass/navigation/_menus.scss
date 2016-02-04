@@ -55,6 +55,15 @@
 		&:hover > a,
 		&.focus > a {
 		}
+		ul {
+			background-color: $color__background-area;
+		}
+		li {
+			margin: 10px 10px 0px;
+			&:last-child {
+				margin-bottom: 10px;
+			}
+		}
 	}
 	a {
 		display: block;
@@ -72,15 +81,6 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
 }
 
 .comment-navigation,
