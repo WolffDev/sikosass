@@ -580,15 +580,15 @@ a:hover, a:active {
   max-width: 1200px;
 }
 .main-navigation ul li {
-  padding: 6px;
+  padding: 15px;
 }
 .main-navigation ul li:hover {
   background-color: #f90;
 }
 .main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 2.25em;
+  top: 3.4em;
   left: -999em;
   z-index: 99999;
   padding: 0;
@@ -902,17 +902,30 @@ object {
 ## Header
 --------------------------------------------------------------*/
 .site-header {
-  height: 100%;
-  position: relative;
-  max-width: 1600px;
   margin: 0 auto;
+}
+.site-header img {
+  display: block;
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.header-wrap {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .site-branding {
+  max-width: 250px;
   position: absolute;
-  max-width: 1200px;
-  top: 0;
-  margin: 0 auto;
+  top: -300px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .site-logo {
@@ -928,6 +941,7 @@ object {
   width: 4em;
   height: 4em;
   color: #fff;
+  border-radius: 10px 14px;
   text-decoration: none;
   line-height: 1.5;
 }

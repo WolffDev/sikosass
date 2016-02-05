@@ -1,0 +1,17 @@
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+h1.site-title {
+  margin: 0;
+  @include font-size(6);
+  @include text-shadow;
+  a {
+    color: $color__background-content;
+  }
+}
+
+p.site-description {
+  margin: 0;
+  @include font-size(1.2);
+  color: $color__background-content;
+}

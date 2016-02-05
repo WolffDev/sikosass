@@ -14,17 +14,17 @@
 		max-width: 1200px;
 
 		li {
-			padding: 6px;
+			padding: 15px;
 			&:hover {
 				background-color: $color__link-hover;
 			}
 		}
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 			//float: left;
 			position: absolute;
-			top: 2.25em;
+			top: 3.4em;
 			left: -999em;
 			z-index: 99999;
 			padding: 0;
