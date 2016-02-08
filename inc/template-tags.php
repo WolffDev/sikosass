@@ -25,7 +25,7 @@ function sikosass_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'sikosass' ),
+		esc_html_x( 'Skrevet den %s', 'post date', 'sikosass' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
@@ -49,7 +49,7 @@ function sikosass_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'sikosass' ) );
 		if ( $categories_list && sikosass_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'sikosass' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . esc_html__( 'Kategori: %1$s', 'sikosass' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
@@ -61,14 +61,14 @@ function sikosass_entry_footer() {
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'sikosass' ), esc_html__( '1 Comment', 'sikosass' ), esc_html__( '% Comments', 'sikosass' ) );
+		comments_popup_link( esc_html__( 'Skriv en kommentar', 'sikosass' ), esc_html__( '1 Comment', 'sikosass' ), esc_html__( '% Comments', 'sikosass' ) );
 		echo '</span>';
 	}
 
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'sikosass' ),
+			esc_html__( 'Rediger %s', 'sikosass' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		'<span class="edit-link">',

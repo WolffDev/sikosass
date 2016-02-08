@@ -379,7 +379,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #E9EAED;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -571,6 +571,7 @@ a:hover, a:active {
   width: 100%;
   background-color: #008cba;
   margin-top: -6px;
+  font-family: "Oxygen", sans-serif;
 }
 .main-navigation ul {
   display: none;
