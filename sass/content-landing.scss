@@ -1,6 +1,13 @@
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
+.intro {
+  background-color: $color__background-content;
+}
+
+.hentry {
+  margin: 0;
+}
 
 h1.site-title {
   margin: 0;
@@ -19,6 +26,7 @@ p.site-description {
 
 .post-entry {
   @include flex(nowrap, space-around);
+  min-height: 400px;
   @media screen and (max-width: $break__medium) {
     @include flex(wrap, space-around);
   }
@@ -27,10 +35,12 @@ p.site-description {
 
 .entry-header {
   max-width: 500px;
+  max-height: 400px;
 }
 
 .entry-wrap {
   max-width: 500px;
+  max-height: 400px;
   padding: 0 20px 0;
   h2 {
     margin-bottom: 0;
