@@ -53,24 +53,24 @@ function sikosass_setup() {
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
 	 */
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+	// add_theme_support( 'html5', array(
+	// 	'search-form',
+	// 	'comment-form',
+	// 	'comment-list',
+	// 	'gallery',
+	// 	'caption',
+	// ) );
 
 	/*
 	 * Enable support for Post Formats.
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
-	add_theme_support( 'post-formats', array(
-		'image',
-		'video',
-		'quote',
-		'link',
-	) );
+	// add_theme_support( 'post-formats', array(
+	// 	'image',
+	// 	'video',
+	// 	'quote',
+	// 	'link',
+	// ) );
 
 	// Set up the WordPress core custom background feature.
 	// add_theme_support( 'custom-background', apply_filters( 'sikosass_custom_background_args', array(
@@ -98,18 +98,18 @@ add_action( 'after_setup_theme', 'sikosass_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function sikosass_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'sikosass' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'sikosass_widgets_init' );
+// function sikosass_widgets_init() {
+// 	register_sidebar( array(
+// 		'name'          => esc_html__( 'Sidebar', 'sikosass' ),
+// 		'id'            => 'sidebar-1',
+// 		'description'   => '',
+// 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+// 		'after_widget'  => '</section>',
+// 		'before_title'  => '<h2 class="widget-title">',
+// 		'after_title'   => '</h2>',
+// 	) );
+// }
+// add_action( 'widgets_init', 'sikosass_widgets_init' );
 
 /**
  * Enqueue scripts and styles.

@@ -32,8 +32,8 @@
 	clear: both;
 }
 
-@mixin flex($wrap: wrap, $space: space-between) {
+@mixin flex($row: row, $wrap: wrap, $space: space-between) {
 	display: flex;
-	flex-flow: row $wrap;
+	flex-flow: $row $wrap;
 	justify-content: $space;
 }

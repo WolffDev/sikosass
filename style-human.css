@@ -577,7 +577,7 @@ a:hover, a:active {
   display: none;
   list-style: none;
   margin: 0 auto;
-  padding: 0 20px 0;
+  padding: 0 15px 0;
   max-width: 1200px;
 }
 .main-navigation ul li {

@@ -3,7 +3,34 @@
 
 .intro {
   background-color: $color__background-content;
+  @include flex(row, wrap, space-around);
+  padding: 60px 0 100px;
+  @media screen and (max-width: $break__medium) {
+    @include flex(nowrap, space-around);
+  }
+  p {
+    margin: 0;
+  }
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    svg {
+      fill: $color__link-hover;
+    }
+  }
 }
+.info svg {
+  width: 100px;
+  height: 100px;
+}
+
+.feature {
+  width: 33%;
+  text-align: center;
+}
+
+
 
 .hentry {
   margin: 0;
