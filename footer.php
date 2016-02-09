@@ -15,9 +15,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sikosass' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'sikosass' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'sikosass' ), 'sikosass', '<a href="http://www.davidwolff.dk" rel="designer">David Wolff</a>' ); ?>
+			<div class="info">1</div>
+			<div class="info">2</div>
+			<div class="info">3</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

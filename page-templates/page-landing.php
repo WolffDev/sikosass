@@ -83,7 +83,7 @@ get_header(); ?>
 				</div>
 
 				<div class="feature">
-					<div class="logo info">
+					<div class="logo infoi">
 							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-52 3 395 395" style="enable-background:new -52 3 395 395;" xml:space="preserve">
 							<g>
 								<path d="M180.2,291.8h-5.4l0-121.6c-0.2-8.3-6.9-15-15.3-15h-48.8c-8.4,0-15.3,6.8-15.3,15.3c0,8.4,6.8,15.3,15.3,15.3h8.4v106
@@ -98,19 +98,46 @@ get_header(); ?>
 					<h3 class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, officia.</h3>
 				</div>
 
+			</div><!-- #Intro -->
+
+			<div class="reklame"></div>
+
+			<article id="posts">
+				<?php
+				$temp = $wp_query; $wp_query= null;
+				$wp_query = new WP_Query(); $wp_query->query('category_name=nyheder&showposts=4' . '&paged='.$paged);
+				while ($wp_query->have_posts()) : $wp_query->the_post();
+				get_template_part( 'template-parts/content', 'land' );
+				?>
+				<?php
+				endwhile; // End of the loop.
+				?>
+			</article>
+
+			<div class="reklame hide"></div>
+
+			<div class="calender">
+				<div class="cal-wrap">
+					<div class="cal">
+						<p>
+							Kalender tekst her.
+						</p>
+					</div>
+					<div class="cal">
+						<p>
+							Kanlender her.
+						</p>
+					</div>
+				</div>
 			</div>
 
-			<?php
-			$temp = $wp_query; $wp_query= null;
-			$wp_query = new WP_Query(); $wp_query->query('category_name=nyheder&showposts=4' . '&paged='.$paged);
-			while ($wp_query->have_posts()) : $wp_query->the_post();
-			get_template_part( 'template-parts/content', 'land' );
-			?>
-			<?php
-			endwhile; // End of the loop.
-			?>
+			<div class="reklame hide"></div>
 
-		</main><!-- #main -->
+			<div class="nyhedsBrev"></div>
+
+			<div class="reklame hide last-item"></div>
+
+			</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php

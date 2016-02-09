@@ -4,9 +4,9 @@
 .intro {
   background-color: $color__background-content;
   @include flex(row, wrap, space-around);
-  padding: 60px 0 100px;
+  padding: 160px 0 205px;
   @media screen and (max-width: $break__medium) {
-    @include flex(nowrap, space-around);
+    @include flex(column, nowrap, space-around);
   }
   p {
     margin: 0;
@@ -18,16 +18,33 @@
     svg {
       fill: $color__link-hover;
     }
+    @media screen and (max-width: $break__medium) {
+      width: 150px;
+      height: 150px;
+    }
   }
 }
-.info svg {
+.infoi svg {
   width: 100px;
   height: 100px;
+  @media screen and (max-width: $break__medium) {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 .feature {
   width: 33%;
   text-align: center;
+  @media screen and (max-width: $break__medium) {
+    width: 95vw;
+    &:nth-child(n+2) {
+      padding-top: 50px;
+    }
+  }
+  h3 {
+    padding: 0 20px 0;
+  }
 }
 
 
@@ -45,34 +62,104 @@ h1.site-title {
   }
 }
 
-p.site-description {
+h2.site-description {
   margin: 0;
   @include font-size(1.2);
-  color: $color__background-content;
 }
 
 .post-entry {
-  @include flex(nowrap, space-around);
+  @include flex(row, nowrap, space-around);
   min-height: 400px;
   @media screen and (max-width: $break__medium) {
-    @include flex(wrap, space-around);
+    @include flex(row, wrap, center);
+    width: 100%;
   }
-
 }
 
-.entry-header {
-  max-width: 500px;
-  max-height: 400px;
+.post-img {
+  width: 500px;
+  height: 400px;
+  background-size:cover;
+  @media screen and (max-width: $break__extra_small) {
+    width: 400px;
+    height: 300px;
+  }
 }
 
 .entry-wrap {
   max-width: 500px;
   max-height: 400px;
-  padding: 0 20px 0;
+  padding: 0 40px 0;
+  background-color: $color__background-area;
   h2 {
     margin-bottom: 0;
   }
   div span {
       @include font-size(.8);
   }
+}
+
+.entry-title {
+  @include font-size(2.5);
+}
+
+.entry-content p {
+  padding-bottom: 40px;
+}
+
+#posts div:nth-child(2n) .entry-wrap {
+  order: -1;
+  text-align: right;
+  @media screen and (max-width: $break__small) {
+    order: 2;
+    text-align: left;
+  }
+}
+#posts div:last-child {
+  padding-bottom: 105px;
+}
+
+#posts {
+  padding-top: 105px;
+}
+
+.reklame {
+  width: 728px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: #c1c1c1;
+  text-align: center;
+}
+
+@media screen and (max-width: $break__medium) {
+.hide {
+  display: none;
+  }
+}
+
+.calender {
+  padding: 105px 0 105px;
+}
+.cal-wrap {
+  @include flex(row, wrap, space-around);
+  @media screen and (max-width: $break__medium) {
+    @include flex(row, wrap, center);
+    width: 100%;
+  }
+}
+.cal {
+  width: 500px;
+  height: 400px;
+  background-color: darkmagenta;
+  padding: 40px;
+}
+
+.nyhedsBrev {
+  margin: 105px 0 105px;
+  height: 500px;
+  background-color: darkcyan;
+}
+
+.last-item {
+  margin-bottom: 105px;
 }

@@ -7,11 +7,38 @@
 #content {
   max-width: 1600px;
   margin: 0 auto;
+  padding-bottom: 105px;
   background-color: $color__background-content;
 }
 
 .content-area {
   max-width: 1000px;
   margin: 0 auto;
-  background-color: $color__background-area;
+  background-color: $color__background-content;
+}
+
+.site-footer {
+  height: 500px;
+  background-color: $color__footer;
+}
+.site-info {
+  max-width: 1000px;
+  margin: 0 auto;
+  @include flex();
+  @media screen and (max-width: $break__medium) {
+    @include flex(row, wrap, center);
+  }
+}
+.info {
+  width: 33%;
+  height: 100px;
+  background-color: crimson;
+  @media screen and (max-width: $break__medium) {
+    width: 500px;
+    @media screen and (max-width: $break__extra_small) {
+      &:nth-child(1n+2) {
+        display: none;
+      }
+    }
+  }
 }
