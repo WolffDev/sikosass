@@ -19,22 +19,16 @@ module.exports = function(grunt) {
            'compiled/style-human.css': 'sass/style.scss'
          }
        },
-       distLand: {
-         options: {
-           style: 'compressed',
-           sourcemap: 'none',
-         },
-         files: {
-           'layouts/content-landing.css': 'sass/content-landing.scss'
-         }
-       },
        dist: {
          options: {
            style: 'compressed',
            sourcemap: 'none',
          },
          files: {
-           'compiled/style.css': 'sass/style.scss'
+           'compiled/style.css': 'sass/style.scss',
+           'content-landing.css': 'sass/content-landing.scss',
+           'content-landing-figure.css':
+           'sass/content-landing-figure.scss'
          }
        }
      },

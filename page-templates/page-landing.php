@@ -100,7 +100,7 @@ get_header(); ?>
 
 			</div><!-- #Intro -->
 
-			<div class="reklame"></div>
+			<div class="reklame hide"></div>
 
 			<article id="posts">
 				<?php
