@@ -26,7 +26,12 @@
 				</p>
 			</div>
 			<div class="footer-info">
-				<a href="https://www.google.dk/maps/place/Stadionvej+50,+5200+Odense+V/@55.3961498,10.3512592,18z/data=!4m2!3m1!1s0x464cdfc314a15d97:0x842a105ee68c1450" target="_blank"><img src="<?php bloginfo('template_directory');?>/inc/img/street-info.png" alt="Google map info til Siko"></a>
+
+					<a href="https://www.google.dk/maps/place/Stadionvej+50,+5200+Odense+V/@55.3961498,10.3512592,18z/data=!4m2!3m1!1s0x464cdfc314a15d97:0x842a105ee68c1450" target="_blank"><img src="<?php bloginfo('template_directory');?>/inc/img/street-info.png" alt="Google map info til Siko" class="zoom">
+
+					</a>
+
+
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

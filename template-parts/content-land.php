@@ -14,10 +14,10 @@
 			<figure>
 				<?php if ( has_post_thumbnail() ) { ?>
 					<?php $image_id = get_post_thumbnail_id(); $image_url = wp_get_attachment_image_src($image_id,'post', true); ?>
-					<div class="post-img" style="background-image: url(<?php echo $image_url[0];?>);"></div>
+					<div class="post-img figure-img" style="background-image: url(<?php echo $image_url[0];?>);"></div>
 
 				<?php } else { ?>
-					<div class="post-img" style="background-image: url(<?php bloginfo('template_directory');?>/inc/img/default_post_img.jpg);"></div>
+					<div class="post-img figure-img" style="background-image: url(<?php bloginfo('template_directory');?>/inc/img/default_post_img.jpg);"></div>
 				<?php } ?>
 				<figcaption>
 					<div>

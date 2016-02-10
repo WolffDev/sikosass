@@ -46,7 +46,7 @@ figcaption div:after{
   background: #2c3e50;
 }
 
-figure .post-img{
+figure .figure-img{
   -webkit-transition: all 0.5s linear;
           transition: all 0.5s linear;
   -webkit-transform: scale3d(1, 1, 1);
@@ -66,10 +66,18 @@ figcaption:hover div:after{
   width: 50%;
 }
 
-figure:hover .post-img{
+figure:hover .figure-img{
   -webkit-transform: scale3d(1.2, 1.2, 1);
           transform: scale3d(1.2, 1.2, 1);
 }
 figcaption h2 {
   color: #2c3e50;
+}
+
+.zoom {
+  transition: all 0.5s linear;
+  &:hover {
+    transform: scale3d(1.2, 1.2, 1);
+    transition: all 0.5s ease-in-out;
+  }
 }

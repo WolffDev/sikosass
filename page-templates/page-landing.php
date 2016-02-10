@@ -133,7 +133,18 @@ get_header(); ?>
 
 			<div class="reklame hide"></div>
 
-			<div class="nyhedsBrev"></div>
+			<div class="nyhedsBrev">
+				<div class="">
+
+				</div>
+				<div class="">
+					<?php
+						if( function_exists( 'mc4wp_show_form' ) ) {
+  				  	mc4wp_show_form();
+						}
+					?>
+				</div>
+			</div>
 
 			<div class="reklame hide last-item"></div>
 

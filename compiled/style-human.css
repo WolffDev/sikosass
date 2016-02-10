@@ -915,7 +915,7 @@ object {
 .site-branding {
   max-width: 250px;
   position: absolute;
-  top: 50px;
+  top: 150px;
   right: 0;
   left: 0;
   margin-right: auto;
@@ -978,7 +978,6 @@ object {
 }
 
 .site-footer {
-  height: 500px;
   background-color: #7cb5ec;
 }
 
@@ -999,6 +998,10 @@ object {
 
 .footer-info {
   width: 50%;
+  padding: 0 0 80px;
+}
+.footer-info p {
+  margin: 0;
 }
 @media screen and (max-width: 1036px) {
   .footer-info {
