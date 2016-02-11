@@ -158,11 +158,56 @@ h2.site-description {
 }
 
 .nyhedsBrev {
-  margin: 105px 0 105px;
-  height: 500px;
-  background-color: darkcyan;
+  margin: 105px auto 105px;
+  text-align: center;
 }
 
 .last-item {
   margin-bottom: 105px;
+}
+
+.mailsub {
+  margin: 0 auto;
+  padding: 0 40px 0;
+  max-width: 700px;
+  @media screen and (max-width: $break__small) {
+    max-width: 500px;
+  }
+}
+
+input[type='email'] {
+  width: 59%;
+  background-color: $color__footer;
+  color: $color__text-main;
+  padding-left: 10px;
+}
+input[type='submit'] {
+  width: 40%;
+  background-color: $color__link-hover;
+  padding: 0;
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+    border: solid 2px #000;
+    background-color: $color__background-area;
+  }
+}
+
+input[type='email'],
+input[type='submit'] {
+  color: $color__text-main;
+  @include font-size(1.5);
+  font: $font__second;
+  height: 60px;
+  border: solid 2px #000;
+  border-radius: 0;
+  margin: 0;
+  &::-webkit-input-placeholder,
+  -ms-input-placeholder,
+  -ms-input-placeholder {
+    color: $color__text-main;
+  }
+  @media screen and (max-width: $break__small) {
+    width: 100%;
+  }
 }

@@ -1,3 +1,5 @@
+@import "variables-site/variables-site";
+
 figure{
   width: 500px;
   height: 400px;
@@ -7,6 +9,10 @@ figure{
   vertical-align: top;
   box-shadow: 0 0 5px #ddd;
   margin: 0;
+  @media screen and (max-width: $break__extra_small) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 figcaption{

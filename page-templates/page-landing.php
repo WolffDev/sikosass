@@ -134,10 +134,10 @@ get_header(); ?>
 			<div class="reklame hide"></div>
 
 			<div class="nyhedsBrev">
-				<div class="">
-
+				<div class="mailsub">
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quas, nihil? Laudantium autem quae, rem aliquam iure quo eius voluptatum!</h2>
 				</div>
-				<div class="">
+				<div class="mailsub">
 					<?php
 						if( function_exists( 'mc4wp_show_form' ) ) {
   				  	mc4wp_show_form();
