@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Landing Page
+ * Template Name: Grid Image Show
  */
 
 get_header(); ?>
@@ -115,9 +115,9 @@ get_header(); ?>
 						</p>
 					</div>
 					<div class="cal">
-						<div id="calendar">
-							
-						</div>
+						<p>
+							Kanlender her.
+						</p>
 					</div>
 				</div>
 			</div>

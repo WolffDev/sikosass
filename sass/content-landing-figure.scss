@@ -7,7 +7,7 @@ figure{
   position: relative;
   display: inline-block;
   vertical-align: top;
-  box-shadow: 0 0 5px #ddd;
+  box-shadow: none;
   margin: 0;
   @media screen and (max-width: $break__extra_small) {
     width: 100%;

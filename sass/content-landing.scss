@@ -87,7 +87,7 @@ h2.site-description {
 }
 
 .entry-wrap {
-  max-width: 500px;
+  width: 500px;
   max-height: 400px;
   padding: 0 40px 0;
   background-color: $color__background-area;
@@ -167,7 +167,7 @@ h2.site-description {
 }
 
 .mailsub {
-  margin: 0 auto;
+margin: 0 auto;
   padding: 0 40px 0;
   max-width: 700px;
   @media screen and (max-width: $break__small) {
@@ -210,4 +210,10 @@ input[type='submit'] {
   @media screen and (max-width: $break__small) {
     width: 100%;
   }
+}
+.mc4wp-response {
+  color: $color__text-main;
+  @include font-size(1.4);
+  background-color: $color__background-area;
+  border-radius: 5px;
 }
