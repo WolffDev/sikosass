@@ -1031,12 +1031,23 @@ object {
 @media screen and (max-width: 1036px) {
   .footer-info {
     width: 500px;
+    padding: 0 40px 50px;
   }
 }
 @media screen and (max-width: 1036px) and (max-width: 401px) {
   .footer-info:nth-child(1n+2) {
     display: none;
   }
+}
+
+.simcal-event-details {
+  color: black;
+}
+.simcal-event-details a {
+  color: #f90;
+}
+.simcal-event-details a:hover {
+  color: #008cba;
 }
 
 /*--------------------------------------------------------------

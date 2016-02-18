@@ -36,10 +36,21 @@
   }
   @media screen and (max-width: $break__medium) {
     width: 500px;
+    padding: 0 40px 50px;
     @media screen and (max-width: $break__extra_small) {
       &:nth-child(1n+2) {
         display: none;
       }
     }
   }
+}
+
+.simcal-event-details {
+  color: black;
+  a {
+    color: $color__link-hover;
+    &:hover {
+      color: $color__background-area;
+    }
+    }
 }

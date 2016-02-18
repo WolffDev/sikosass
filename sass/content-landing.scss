@@ -1,10 +1,13 @@
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
+*:focus {
+  outline: none;
+}
 .intro {
   background-color: $color__background-content;
   @include flex(row, wrap, space-around);
-  padding: 160px 0 205px;
+  padding: 160px 0 105px;
   @media screen and (max-width: $break__medium) {
     @include flex(column, nowrap, space-around);
   }
@@ -47,7 +50,25 @@
   }
 }
 
+// a[href="#jump"] {
+//   color: $color__text-main;
+//   &:hover {
+//     color: $color__link-hover;
+//   }
+// }
 
+.jump-nyhed {
+  margin: 0 auto 105px;
+  max-width: 350px;
+  background: $color__background-area;
+  text-align: center;
+  border-radius: 10px;
+  color: $color__text-main;
+  &:hover {
+    color: $color__link-hover;
+    background-color: $color__background-content;
+  }
+}
 
 .hentry {
   margin: 0;

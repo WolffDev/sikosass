@@ -91,6 +91,12 @@ get_header(); ?>
 
 			</div><!-- #Intro -->
 
+			<a href="#jump">
+				<div class="jump-nyhed">
+					<h1>Tilmeld nyhedsbrev</h1>
+				</div>
+			</a>
+
 			<div class="reklame hide"></div>
 
 			<article id="posts">
@@ -109,20 +115,12 @@ get_header(); ?>
 
 			<div class="calender">
 				<div class="cal-wrap">
-					<div class="cal">
-						<p>
-							Kalender tekst her.
-						</p>
-					</div>
-					<div class="cal">
-						<div id="calendar">
-							
-						</div>
-					</div>
+					<h1>SIKO Kalender</h1>
+					<?php echo do_shortcode('[calendar id="1818"]') ?>
 				</div>
 			</div>
 
-			<div class="reklame hide"></div>
+			<div id="jump" class="reklame hide"></div>
 
 			<div class="nyhedsBrev">
 				<div class="mailsub">

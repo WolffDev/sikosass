@@ -94,7 +94,20 @@ function sikosass_content_width() {
 add_action( 'after_setup_theme', 'sikosass_content_width', 0 );
 
 
+/**
+ * Removes Edit Calendar link
+ */
+function simcal_remove_edit_post_link( $link, $id ) {
 
+	// Check if the ID is a post type of calendar and if so return an empty string
+	if( get_post_type( $id ) == 'calendar' ) {
+		return '';
+	}
+
+	// Return the normal link for all other uses
+	return $link;
+}
+add_filter( 'edit_post_link', 'simcal_remove_edit_post_link', 10, 2 );
 
 
 
@@ -130,6 +143,8 @@ function sikosass_scripts() {
 
 
 	wp_enqueue_script( 'sikosass-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+	wp_enqueue_script( 'sikosass-smooth-scroll', get_template_directory_uri() . '/js/script.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'sikosass-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
