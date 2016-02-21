@@ -1,14 +1,83 @@
 @media screen and (min-width: $break__mobile) {
+	ul {
+		margin: 0;
+	}
+	.main-navigation,
+	.main-navigation.toggled {
+		position: relative;
+		min-height: 3.5em;
+		margin: 0 auto;
+		padding: 0 3.5em;
+		background-color: $color__background-area;
+	}
+	.nav-menu {
+		padding: .3em 0 0 0;
+		background-color: transparent;
+	}
+	.main-navigation ul,
+	.main-navigation.toggled ul {
+		overflow-y: visible;
+	}
+	.main-navigation li {
+		display: inline-block;
+		border: none;
+	}
+	.main-navigation ul ul {
+		outline: 1px solid #333;
+	}
+	.main-navigation li li {
+		display: block;
+		text-align: left;
+	}
+	.main-navigation a,
+	.main-navigation ul ul li:last-child a {
+		border-bottom: none;
+	}
+
+
+
+	.main-navigation ul ul.toggled-on {
+		position: absolute;
+		width: 12em;
+		display: block;
+		z-index: 10;
+		margin-left: 0;
+		background: $color__background-area;
+	}
+	.main-navigation ul ul ul.toggled-on {
+		position: relative;
+	}
+	.main-navigation ul ul ul a {
+		padding-left: 2em;
+	}
+	.dropdown-toggle {
+		top: 13px;
+		right: 15px;
+		border: none;
+	}
+	.dropdown:after {
+		line-height: 27px;
+		width: 27px;
+	}
+
+	.main-navigation ul li {
+		padding: 5px;
+	}
+}
+
+@media screen and (min-width: $break__mobile) {
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		@include flex;
 	}
 }
 
 @media screen and (max-width: $break__mobile) {
-
+	.jump-nyhed h1 {
+		@include font-size(1.7);
+	}
 	.menu-toggle {
 		position: fixed;
 		z-index: 100;
@@ -36,8 +105,13 @@
 			box-shadow: none;
 		}
 	}
+
 	.menu-toggle.hide {
 		bottom: -2.5em;
+	}
+
+	.toggled .menu-toggle.hide {
+		bottom: 1em;
 	}
 
 	.main-navigation.toggled {
@@ -46,6 +120,28 @@
 		padding: 1em;
 		z-index: 1;
 	}
+	.nav-menu {
+		margin:0 0 3em;
+		max-width: 360px;
+		background-color: $color__background-area;
+	}
+	.main-navigation.toggled ul {
+		max-height: calc(100vh - 8em);
+		overflow-y: auto;
+	}
+	.main-navigation.toggled ul ul {
+		display: none;
+	}
+
+	.main-navigation.toggled ul ul.toggled-on,
+	.main-navigation.toggled ul ul.toggled-on > ul {
+		display: block;
+	}
+
+	.nav-menu li {
+		padding: 5px;
+	}
+
 }
 
 @media screen and (max-width: $break__medium) {

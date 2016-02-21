@@ -59,6 +59,7 @@
 
 .jump-nyhed {
   margin: 0 auto 105px;
+  width: 90vw;
   max-width: 350px;
   background: $color__background-area;
   text-align: center;
@@ -101,6 +102,7 @@ h2.site-description {
   width: 500px;
   height: 400px;
   background-size:cover;
+  background-position: top center;
 }
 
 .entry-wrap {
