@@ -99,6 +99,10 @@ h2.site-description {
   width: 500px;
   height: 400px;
   background-size: cover; }
+  @media screen and (max-width: 401px) {
+    .post-img {
+      width: 400px;
+      height: 300px; } }
 
 .entry-wrap {
   width: 500px;
@@ -141,6 +145,10 @@ h2.site-description {
   background-color: #c1c1c1;
   text-align: center; }
 
+@media screen and (max-width: 1036px) {
+  .hide {
+    display: none; } }
+
 .calender {
   padding: 105px 0 105px; }
 
@@ -152,11 +160,6 @@ h2.site-description {
       flex-flow: row wrap;
       justify-content: center;
       width: 100%; } }
-
-.simcal-calendar {
-  background-color: rgba(0, 0, 0, 0.1); }
-  .simcal-calendar .simcal-past {
-    background-color: rgba(0, 0, 0, 0.2); }
 
 .nyhedsBrev {
   margin: 105px auto 105px;
