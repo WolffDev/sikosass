@@ -97,7 +97,7 @@ get_header(); ?>
 				</div>
 			</a>
 
-			<div class="reklame hide"></div>
+			<div class="reklame hideRek"></div>
 
 			<article id="posts">
 				<?php
@@ -111,7 +111,7 @@ get_header(); ?>
 				?>
 			</article>
 
-			<div class="reklame hide"></div>
+			<div class="reklame hideRek"></div>
 
 			<div class="calender">
 				<div class="cal-wrap">
@@ -119,8 +119,8 @@ get_header(); ?>
 					<?php echo do_shortcode('[calendar id="1818"]') ?>
 				</div>
 			</div>
-
-			<div id="jump" class="reklame hide"></div>
+			<div id="jump"></div>
+			<div class="reklame hideRek"></div>
 
 			<div class="nyhedsBrev">
 				<div class="mailsub">
@@ -135,7 +135,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="reklame hide last-item"></div>
+			<div class="reklame hideRek last-item"></div>
 
 			</main><!-- #main -->
 	</div><!-- #primary -->

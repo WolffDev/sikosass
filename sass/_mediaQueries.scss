@@ -1,4 +1,4 @@
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: $break__mobile) {
 	.menu-toggle {
 		display: none;
 	}
@@ -7,8 +7,49 @@
 	}
 }
 
+@media screen and (max-width: $break__mobile) {
+
+	.menu-toggle {
+		position: fixed;
+		z-index: 100;
+		bottom: 1em;
+		left: 1em;
+		text-transform: uppercase;
+		background-color: $color__background-area;
+		color: $color__text-main;
+		height: 40px;
+		width: 80px;
+		border: 1px #fff solid;
+		border-radius: 0;
+		text-shadow: none;
+		padding: 0;
+		transition: all ease-out 400ms;
+		box-shadow: none;
+		@include font-size(1);
+		&:hover {
+			color: $color__link-hover;
+		}
+		&:hover,
+		&:active,
+		&:focus {
+			border-color: inherit;
+			box-shadow: none;
+		}
+	}
+	.menu-toggle.hide {
+		bottom: -2.5em;
+	}
+
+	.main-navigation.toggled {
+		position: fixed;
+		bottom: 0;
+		padding: 1em;
+		z-index: 1;
+	}
+}
+
 @media screen and (max-width: $break__medium) {
-.hide {
+.hideRek {
   display: none;
   }
 }

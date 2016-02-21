@@ -79,3 +79,5 @@
 		}
 	}
 } )();
+
+// Hide/show toggle button on scroll
