@@ -5,6 +5,7 @@
 	float: left;
 	width: 100%;
 	font-family: $font__main;
+  box-shadow: 8px 0 15px -4px rgba(42,38,38,0.54),-8px 0 8px -4px rgba(42,38,38,0.54);
 
 	ul {
 		display: none;
@@ -135,12 +136,59 @@
 
 	.nav-previous {
 		float: left;
-		width: 50%;
 	}
 
 	.nav-next {
 		float: right;
 		text-align: right;
-		width: 50%;
 	}
+}
+
+/*
+ * Other Navigation
+ */
+.post-navigation {
+	padding: 2em 3em;
+	text-align: left;
+	overflow: hidden;
+	a {
+		display: block;
+		width: 100%;
+		text-decoration: none;
+		padding: 1em;
+		border: 1px solid $color__text-main;
+		&:hover,
+		&:focus {
+			border-color: $color__link-hover;
+		}
+	}
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.post-navigation .nav-previous {
+	display: flex;
+	align-items: stretch;
+	float: left;
+	width: 45%;
+}
+
+.post-navigation .nav-next {
+	display: flex;
+	align-items: stretch;
+	float: left;
+	width: 48%;
+}
+
+.nav-previous {
+	padding-bottom: 0;
+}
+
+.post-navigation .post-title {
+	@include font-size(1.2);
+	font-weight: 700;
 }

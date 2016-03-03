@@ -164,4 +164,40 @@
 		background-repeat: no-repeat;
 		}
 	}
+	.entry-header-post {
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: $break__medium) {
+	main .calender {
+		padding: 0;
+	}
+	main .jump-nyhed {
+		margin: 0 auto;
+	}
+	main .nyhedsBrev {
+		margin: 105px auto 0;
+	}
+}
+
+@media screen and (max-width: $break__nav_post) {
+	.nav-links {
+		flex-flow: column wrap;
+	}
+	.post-navigation .nav-previous,
+	.post-navigation .nav-next {
+		width: 100%;
+	}
+	.post-navigation .nav-next {
+		padding-top: 1em;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: $break__small) {
+	div.featured-image {
+		max-width: calc(100% + 3em);
+		margin: 0 -1.5em;
+	}
 }

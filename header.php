@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="site">
-	<div class="site-logo">
+	<!-- <div class="site-logo">
 		<?php $site_title = get_bloginfo( 'name' ); ?>
 		<a href="<?php echo esc_url( home_url( '/' ) );?>" rel="home">
 			<?php
@@ -36,17 +36,17 @@
 				</div>
 			<?php } ?>
 		</a>
-	</div>
+	</div> -->
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sikosass' ); ?></a>
 		<?php if ( get_header_image() ) { ?>
 			<header id="masthead" class="site-header" role="banner">
-					<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php bloginfo( 'description' ); ?>">
+					<img src="<?php header_image(); ?>" class="<?php if ( !is_front_page() ) { echo 'screen-reader-text'; } ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php bloginfo( 'description' ); ?>">
 		<?php } else { ?>
 			<header id="masthead" class="site-header" role="banner">
 
 		<?php } ?>
-			<div class="site-branding">
+			<div class="site-branding<?php if ( !is_front_page() ) { echo ' screen-reader-text'; } ?>">
 				<?php
 				if ( is_front_page() || is_home()  ) : ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

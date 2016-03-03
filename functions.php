@@ -43,6 +43,7 @@ function sikosass_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 1200, 400, true );
 	add_image_size('post', 500, 400, false );
+	add_image_size('single_post', 1000, 400, true);
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

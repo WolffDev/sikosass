@@ -67,4 +67,38 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+  $(window).scroll(function() {
+
+    var wScroll = $(this).scrollTop();
+    var menuHeight = $('.main-navigation').height();
+    if (wScroll >= 420 && window.innerWidth > 872) {
+      $('.main-navigation').css({
+        'position' : 'fixed',
+        'top' : 0,
+        'max-width' : 1600,
+        'z-index' : 1000
+      });
+      $('.site-content').css({
+        'margin' : menuHeight + 'px auto 0'
+      });
+    } else {
+      $('.main-navigation').css({
+        'position' : 'relative'
+      });
+      $('.site-content').css({
+        'margin' : '0 auto'
+      });
+    }
+
+    if (window.innerWidth <= 872) {
+      $('.main-navigation').css({
+        'position' : 'fixed',
+        'bottom' : 0,
+        'z-index' : 1000,
+        'box-shadow' : 'none'
+      });
+    }
+
+  });
+
 });

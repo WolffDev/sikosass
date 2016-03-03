@@ -9,14 +9,16 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class( ' entry-post-content'); ?>>
+	<header class="entry-header entry-header-post">
+		<?php if ( has_post_thumbnail() ) { ?>
+			<?php $image_id = get_post_thumbnail_id(); $image_url = wp_get_attachment_image_src($image_id,'post', true); ?>
+			<div class="featured-image" style="background-image: url(<?php echo $image_url[0];?>);"></div>
+
+		<?php } ?>
+
 		<?php
-			if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			}
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -40,7 +42,6 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
 	<footer class="entry-footer">
 		<?php sikosass_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

@@ -4,6 +4,17 @@
   margin: 0 auto;
 }
 
+img.alignright,
+img.alignleft,
+img.aligncenter {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.entry-post-content {
+  padding: 0 1.5em;
+}
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -61,4 +72,12 @@
       color: $color__background-area;
     }
     }
+}
+
+div.featured-image {
+  margin-top: 1.5em;
+  max-width: 1000px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
