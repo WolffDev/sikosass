@@ -94,7 +94,7 @@ jQuery(document).ready(function($) {
       $('.main-navigation').css({
         'position' : 'fixed',
         'bottom' : 0,
-        'z-index' : 1000,
+        'z-index' : 1001,
         'box-shadow' : 'none'
       });
     }
