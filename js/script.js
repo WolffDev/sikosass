@@ -67,39 +67,60 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-  $(window).scroll(function() {
-
-    var wScroll = $(this).scrollTop();
-    var menuHeight = $('.main-navigation').height();
-    var sliderImg = $('.headerslider').height();
-    if (wScroll >= sliderImg && window.innerWidth > 872) {
-      $('.main-navigation').css({
-        'position' : 'fixed',
-        'top' : 0,
-        'max-width' : 1600,
-        'z-index' : 1000
-      });
-      $('.site-content').css({
-        'margin' : menuHeight + 'px auto 0'
-      });
-    } else {
-      $('.main-navigation').css({
-        'position' : 'relative'
-      });
-      $('.site-content').css({
-        'margin' : '0 auto'
-      });
-    }
-
-    if (window.innerWidth <= 872) {
-      $('.main-navigation').css({
-        'position' : 'fixed',
-        'bottom' : 0,
-        'z-index' : 1001,
-        'box-shadow' : 'none'
-      });
-    }
-
+  var headerHeight = $('.headerslider').height();
+  var adminHeight = $('#wpadminbar').height();
+  var totalHeight = headerHeight + adminHeight;
+  var navHeight = $('.main-navigation').height();
+  $(window).bind('scroll', function() {
+  if ($(window).scrollTop() + adminHeight > totalHeight && window.innerWidth > 872) {
+   $('.main-navigation').addClass('navbar-fixed').css('marginTop',adminHeight);
+   $('body').css('marginTop',navHeight);
+   }
+   else {
+     $('.main-navigation').removeClass('navbar-fixed').css('marginTop',0);
+     $('body').css('marginTop','0');
+   }
   });
+
+  // $(window).scroll(function() {
+  //
+  //   var wScroll = $(this).scrollTop();
+  //   var menuHeight = $('.main-navigation').height();
+  //   var sliderImg = $('.headerslider').height();
+  //   var adminBar = $('#wpadminbar').height();
+  //   if (wScroll >= sliderImg ) {
+  //   }
+  //
+  //     $('.main-navigation').css({
+  //       'position' : 'fixed',
+  //       'top' : adminBar + 'px',
+  //       'max-width' : 1600,
+  //       'z-index' : 1000
+  //     });
+  //     $('.site-content').css({
+  //       'margin' : menuHeight + 'px auto 0'
+  //     });
+  //
+  //   } else {
+  //     $('.main-navigation').css({
+  //       'position' : 'relative',
+  //       'top' : 0,
+  //     });
+  //     $('.site-content').css({
+  //       'margin' : '0 auto'
+  //     });
+  //   }
+  //
+  //   if (window.innerWidth <= 872) {
+  //     $('.main-navigation').css({
+  //       'position' : 'fixed',
+  //       'top' : '100%',
+  //       'bottom' : 0,
+  //       'z-index' : 1001,
+  //       'box-shadow' : 'none'
+  //     });
+  //   }
+  //
+  // });
 
 });

@@ -117,12 +117,14 @@
 	.main-navigation.toggled {
 		position: fixed;
 		bottom: 0;
+		box-shadow: none;
 		padding: 1em;
 		z-index: 1;
 	}
 	.nav-menu {
 		margin:0 0 3em;
 		max-width: 360px;
+		box-shadow: 8px 0 15px -4px rgba(42,38,38,0.54),-8px 0 8px -4px rgba(42,38,38,0.54);
 		background-color: $color__background-area;
 	}
 	.main-navigation.toggled ul {
@@ -200,4 +202,11 @@
 		max-width: calc(100% + 3em);
 		margin: 0 -1.5em;
 	}
+}
+
+.navbar-fixed {
+	position: fixed;
+	top: 0;
+	max-width: 1600px;
+	z-index: 1000;
 }
