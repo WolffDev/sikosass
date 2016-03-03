@@ -71,7 +71,8 @@ jQuery(document).ready(function($) {
 
     var wScroll = $(this).scrollTop();
     var menuHeight = $('.main-navigation').height();
-    if (wScroll >= 420 && window.innerWidth > 872) {
+    var sliderImg = $('.headerslider').height();
+    if (wScroll >= sliderImg && window.innerWidth > 872) {
       $('.main-navigation').css({
         'position' : 'fixed',
         'top' : 0,
