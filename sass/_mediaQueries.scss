@@ -210,3 +210,8 @@
 	max-width: 1600px;
 	z-index: 1000;
 }
+.site-logo-fixed {
+	position: fixed !important;
+	top: 75px !important;
+	transition: all 1.5s ease-in-out;
+}

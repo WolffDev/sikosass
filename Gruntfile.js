@@ -28,7 +28,8 @@ module.exports = function(grunt) {
            'compiled/style.css': 'sass/style.scss',
            'content-landing.css': 'sass/content-landing.scss',
            'content-landing-figure.css':
-           'sass/content-landing-figure.scss'
+           'sass/content-landing-figure.scss',
+           'css/downloadAtt.css': 'sass/downloadAtt.scss'
          }
        }
      },

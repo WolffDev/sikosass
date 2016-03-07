@@ -1,0 +1,42 @@
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+.download-attachments {
+  position: relative;
+  ul {
+    min-height: 120px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    li {
+      display: flex;
+      flex-flow: column wrap;
+      width: 100%;
+      justify-content: space-around;
+      h4 {
+        margin: 0 0 1em;
+      }
+    }
+    .attachment-description {
+      width: 80%;
+    }
+    button.downloadFile {
+      position: absolute;
+      right: 10px;
+      top:35px;
+      height: 50px;
+      width: 150px;
+      border: none;
+      border-radius: 0;
+      color: $color__text-main;
+      @include font-size(1.2);
+      background-color: $color__background-area;
+      &:hover,
+      &:focus {
+        outline: none;
+        background-color: $color__link-hover;
+      }
+    }
+  }
+}

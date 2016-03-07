@@ -954,7 +954,7 @@ object {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 1em 1em 0;
 }
 
 .page-links {
@@ -996,8 +996,16 @@ object {
   text-align: center;
 }
 
-.site-logo {
-  position: relative;
+.site-logo svg {
+  padding: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 10em;
+  transition: all .2s ease;
+}
+.site-logo svg:hover, .site-logo svg:focus {
+  background-color: #ff9900;
+  transition: all .2s ease;
 }
 
 .site-logo a {
@@ -1006,15 +1014,8 @@ object {
   top: 1em;
   left: 1em;
   display: block;
-  width: 4em;
-  height: 4em;
-  color: #fff;
-  border-radius: 10px 14px;
   text-decoration: none;
   line-height: 1.5;
-}
-.site-logo a:hover, .site-logo a:focus {
-  background-color: #f90;
 }
 
 .site-firstletter {
@@ -1371,4 +1372,10 @@ div.featured-image {
   top: 0;
   max-width: 1600px;
   z-index: 1000;
+}
+
+.site-logo-fixed {
+  position: fixed !important;
+  top: 75px !important;
+  transition: all 1.5s ease-in-out;
 }

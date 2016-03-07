@@ -189,12 +189,11 @@ margin: 0 auto;
   }
 }
 
-input[type='email'],
-input[name='FNAME'],
-input[name='LNAME'] {
+input[type='email'] {
   background-color: $color__footer;
   color: $color__text-main;
   padding-left: 10px;
+  width: 59%;
 }
 
 
@@ -213,14 +212,11 @@ input[type='submit'] {
 }
 
 input[type='email'],
-input[type='submit'],
-input[name='FNAME'],
-input[name='LNAME'] {
+input[type='submit'] {
   color: $color__text-main;
   @include font-size(1.5);
   font: $font__second;
   height: 60px;
-  width: 49%;
   border: solid 2px #000;
   border-radius: 0;
   margin: 0;
@@ -235,10 +231,6 @@ input[name='LNAME'] {
   }
 }
 
-input[name='FNAME'],
-input[name='LNAME'] {
-  margin-bottom: 4px;
-}
 .mc4wp-response {
   color: $color__text-main;
   @include font-size(1.4);
