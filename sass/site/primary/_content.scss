@@ -28,34 +28,6 @@ img.aligncenter {
   background-color: $color__background-content;
 }
 
-.site-footer {
-  background-color: $color__footer;
-}
-.site-info {
-  max-width: 1000px;
-  margin: 80px auto 0;
-  @include flex();
-  @media screen and (max-width: $break__medium) {
-    @include flex(row, wrap, center);
-  }
-}
-.footer-info {
-  width: 50%;
-  padding: 0 40px 80px;
-  p {
-    margin: 0;
-  }
-  @media screen and (max-width: $break__medium) {
-    width: 500px;
-    padding: 0 40px 50px;
-    @media screen and (max-width: $break__extra_small) {
-      &:nth-child(1n+2) {
-        display: none;
-      }
-    }
-  }
-}
-
 .zoom {
   transition: all 0.5s linear;
   &:hover {
