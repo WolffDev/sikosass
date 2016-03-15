@@ -142,7 +142,7 @@ function sikosass_scripts() {
 
 	wp_enqueue_style( 'sikosass-layout-figure-style' , get_template_directory_uri() . '/content-landing-figure.css' );
 
-	wp_enqueue_style( 'sikosass-fontawesome' , 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
+	// wp_enqueue_style( 'sikosass-fontawesome' , 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 
 
 	wp_enqueue_script( 'sikosass-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );

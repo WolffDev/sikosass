@@ -619,10 +619,9 @@ a:hover, a:active {
   background-color: transparent;
   border: 0;
   box-sizing: content-box;
-  font-family: 'FontAwesome';
   content: "";
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   padding: 0;
   position: absolute;
   text-transform: lowercase;
@@ -633,12 +632,12 @@ a:hover, a:active {
 }
 
 .dropdown-toggle:after {
-  content: "\f078";
+  content: url(inc/img/chevdown_512.svg);
+  fill: #fff;
   font-size: 14px;
   line-height: 27px;
   position: relative;
   top: 0;
-  left: 1px;
   width: 27px;
 }
 
@@ -654,7 +653,7 @@ a:hover, a:active {
 }
 
 .dropdown-toggle.toggle-on:after {
-  content: "\f077";
+  content: url(inc/img/chevup_512.svg);
 }
 
 /* Small menu. */
@@ -1251,8 +1250,8 @@ div.featured-image {
   }
 
   .dropdown-toggle {
-    top: 13px;
-    right: 15px;
+    top: 18px;
+    right: 14px;
     border: none;
   }
 

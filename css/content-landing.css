@@ -61,7 +61,7 @@
   max-width: 350px;
   background: #008cba;
   text-align: center;
-  border-radius: 10px;
+  border: 2px solid #008cba;
   color: #fff; }
   .jump-nyhed:hover {
     color: #f90;

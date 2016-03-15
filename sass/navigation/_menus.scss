@@ -81,10 +81,9 @@
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
-	font-family: 'FontAwesome';
 	content: "";
-	height: 35px;
-	width: 35px;
+	height: 30px;
+	width: 30px;
 	padding: 0;
 	position: absolute;
 	text-transform: lowercase; /* Stop screen readers to read the text as capital letters */
@@ -94,12 +93,12 @@
 }
 
 .dropdown-toggle:after {
-	content: "\f078";
+	content: url(inc/img/chevdown_512.svg);
+	fill: #fff;
 	font-size: 14px;
 	line-height: 27px;
 	position: relative;
 	top: 0;
-	left: 1px;
 	width: 27px;
 }
 
@@ -115,7 +114,7 @@
 }
 
 .dropdown-toggle.toggle-on:after {
-	content: "\f077";
+	content: url(inc/img/chevup_512.svg);
 }
 
 

@@ -75,7 +75,7 @@ get_header(); ?>
 
 				<div class="feature">
 					<div class="logo infoi">
-							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-52 3 395 395" style="enable-background:new -52 3 395 395;" xml:space="preserve">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-52 3 395 395" style="enable-background:new -52 3 395 395;" xml:space="preserve">
 							<g>
 								<path d="M180.2,291.8h-5.4l0-121.6c-0.2-8.3-6.9-15-15.3-15h-48.8c-8.4,0-15.3,6.8-15.3,15.3c0,8.4,6.8,15.3,15.3,15.3h8.4v106
 									h-5.4c-8.4,0-15.3,6.8-15.3,15.3c0,8.4,6.8,15.3,15.3,15.3h66.4c8.4,0,15.3-6.8,15.3-15.3C195.5,298.7,188.7,291.8,180.2,291.8z"/>

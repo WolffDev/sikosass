@@ -61,12 +61,12 @@
   margin: 0 auto 105px;
   width: 90vw;
   max-width: 350px;
-  background: $color__background-area;
   text-align: center;
-  border-radius: 10px;
+  border: 3px solid $color__background-area;
   color: $color__text-main;
   &:hover {
     color: $color__link-hover;
+    border: 3px solid $color__link-hover;
     background-color: $color__background-content;
   }
 }
