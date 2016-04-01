@@ -1072,7 +1072,7 @@ object {
 --------------------------------------------------------------*/
 #page {
   box-shadow: 8px 0 15px -4px rgba(42, 38, 38, 0.54), -8px 0 8px -4px rgba(42, 38, 38, 0.54);
-  max-width: 1600px;
+  max-width: 95vw;
   margin: 0 auto;
 }
 
@@ -1236,10 +1236,6 @@ div.featured-image {
   }
 }
 @media screen and (max-width: 872px) {
-  #content {
-    max-width: 1600px;
-  }
-
   .jump-nyhed h1 {
     font-size: 27.2px;
     font-size: 1.7rem;
@@ -1374,7 +1370,7 @@ div.featured-image {
 .navbar-fixed {
   position: fixed;
   top: 0;
-  max-width: 1600px;
+  max-width: 95vw;
   z-index: 1000;
 }
 

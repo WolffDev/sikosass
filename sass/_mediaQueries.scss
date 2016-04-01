@@ -76,9 +76,7 @@
 }
 
 @media screen and (max-width: $break__mobile) {
-	#content {
-		max-width: 1600px;
-	}
+
 	.jump-nyhed h1 {
 		@include font-size(1.7);
 	}
@@ -211,7 +209,7 @@
 .navbar-fixed {
 	position: fixed;
 	top: 0;
-	max-width: 1600px;
+	max-width: 95vw;
 	z-index: 1000;
 }
 .site-logo-fixed {
