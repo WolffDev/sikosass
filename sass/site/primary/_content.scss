@@ -1,6 +1,6 @@
 #page {
   box-shadow: $boxShadow__content;
-  max-width: 1600px;
+  max-width: 95vw;
   margin: 0 auto;
 }
 
@@ -16,10 +16,10 @@ img.aligncenter {
 }
 
 #content {
-  max-width: 1600px;
   margin: 0 auto;
   padding-bottom: 105px;
   background-color: $color__background-content;
+  box-shadow: $boxShadow__content;
 }
 
 .content-area {

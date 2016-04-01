@@ -3,6 +3,12 @@
 
 .download-attachments {
   position: relative;
+  .attachment-date {
+    margin-top: 10px;
+  }
+  hr {
+    margin-top: 20px;
+  }
   ul {
     min-height: 120px;
     list-style: none;
@@ -19,14 +25,14 @@
       }
     }
     .attachment-description {
-      width: 80%;
+      width: 65%;
     }
     button.downloadFile {
       position: absolute;
       right: 10px;
       top:35px;
       height: 50px;
-      width: 150px;
+      width: 250px;
       border: none;
       border-radius: 0;
       color: $color__text-main;
@@ -36,6 +42,36 @@
       &:focus {
         outline: none;
         background-color: $color__link-hover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break__mobile) {
+  .download-attachments{
+    ul {
+      .attachment-description {
+        width: 55%;
+      }
+      button.downloadFile {
+        width: 180px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break__extra_medium) {
+  .download-attachments{
+    ul {
+      .attachment-description {
+        width: 100%;
+      }
+      button.downloadFile {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px 0 0;
       }
     }
   }

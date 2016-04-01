@@ -1,4 +1,5 @@
 @media screen and (min-width: $break__mobile) {
+
 	ul {
 		margin: 0;
 	}
@@ -75,6 +76,9 @@
 }
 
 @media screen and (max-width: $break__mobile) {
+	#content {
+		max-width: 1600px;
+	}
 	.jump-nyhed h1 {
 		@include font-size(1.7);
 	}

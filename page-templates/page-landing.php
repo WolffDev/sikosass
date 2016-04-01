@@ -43,7 +43,7 @@ get_header(); ?>
 							</g>
 						</svg>
 					</div>
-					<h3 class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, cupiditate.</h3>
+					<h3 class="intro-text">SIKO hjælper idrætsforeninger i Odense. Vi kan hjælpe jer med tilskud/anlæg/fundraising udviklingsprojekter og iøvright alt der har med jeres forening at gøre.</h3>
 				</div>
 
 				<div class="feature">
@@ -70,7 +70,7 @@ get_header(); ?>
 							</g>
 						</svg>
 					</div>
-					<h3 class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, impedit.</h3>
+					<h3 class="intro-text">SIKO sætter den idrætspolitiske dagsorden. Vi markerer os med aktuelle idrætspolitiske synspunkter og har den opdaterede viden på alle idrætpolitiske temaer. </h3>
 				</div>
 
 				<div class="feature">
@@ -86,7 +86,7 @@ get_header(); ?>
 						</svg>
 
 					</div>
-					<h3 class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, officia.</h3>
+					<h3 class="intro-text">SIKO samrbejder med Odense kommune på alle områder, der har relevans for vores medlemsforeninger, f.eks i forhold til tilskud, lokaler, medlemsrekruttering, fundraising og udvikling.</h3>
 				</div>
 
 			</div><!-- #Intro -->

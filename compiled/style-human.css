@@ -995,7 +995,14 @@ object {
   text-align: center;
 }
 
+.logo-wrapper {
+  position: relative;
+}
+
 .site-logo svg {
+  position: absolute;
+  top: 16px;
+  left: 2.5vw;
   padding: 7px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
@@ -1008,13 +1015,9 @@ object {
 }
 
 .site-logo a {
-  position: absolute;
-  z-index: 10;
-  top: 1em;
-  left: 1em;
   display: block;
   text-decoration: none;
-  line-height: 1.5;
+  z-index: 100;
 }
 
 .site-firstletter {
@@ -1069,7 +1072,7 @@ object {
 --------------------------------------------------------------*/
 #page {
   box-shadow: 8px 0 15px -4px rgba(42, 38, 38, 0.54), -8px 0 8px -4px rgba(42, 38, 38, 0.54);
-  max-width: 1600px;
+  max-width: 95vw;
   margin: 0 auto;
 }
 
@@ -1085,10 +1088,10 @@ img.aligncenter {
 }
 
 #content {
-  max-width: 1600px;
   margin: 0 auto;
   padding-bottom: 105px;
   background-color: #00af62;
+  box-shadow: 8px 0 15px -4px rgba(42, 38, 38, 0.54), -8px 0 8px -4px rgba(42, 38, 38, 0.54);
 }
 
 .content-area {
@@ -1233,6 +1236,10 @@ div.featured-image {
   }
 }
 @media screen and (max-width: 872px) {
+  #content {
+    max-width: 1600px;
+  }
+
   .jump-nyhed h1 {
     font-size: 27.2px;
     font-size: 1.7rem;
