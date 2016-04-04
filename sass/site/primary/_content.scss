@@ -15,6 +15,16 @@ img.aligncenter {
   padding: 0 1.5em;
 }
 
+.entry-header-post {
+  height: 100%;
+  h1.entry-title {
+    margin-bottom: 0;
+  }
+  .entry-meta {
+    @include font-size(0.8);
+  }
+}
+
 #content {
   margin: 0 auto;
   padding-bottom: 105px;

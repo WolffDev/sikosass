@@ -1125,6 +1125,17 @@ img.aligncenter {
   padding: 0 1.5em;
 }
 
+.entry-header-post {
+  height: 100%;
+}
+.entry-header-post h1.entry-title {
+  margin-bottom: 0;
+}
+.entry-header-post .entry-meta {
+  font-size: 12.8px;
+  font-size: 0.8rem;
+}
+
 #content {
   margin: 0 auto;
   padding-bottom: 105px;
@@ -1376,10 +1387,6 @@ div.featured-image {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-  }
-
-  .entry-header-post {
-    height: 100%;
   }
 }
 @media screen and (max-width: 1036px) {
