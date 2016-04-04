@@ -1072,7 +1072,7 @@ object {
 --------------------------------------------------------------*/
 #page {
   box-shadow: 8px 0 15px -4px rgba(42, 38, 38, 0.54), -8px 0 8px -4px rgba(42, 38, 38, 0.54);
-  max-width: 95vw;
+  max-width: 98vw;
   margin: 0 auto;
 }
 
@@ -1369,7 +1369,7 @@ div.featured-image {
 .navbar-fixed {
   position: fixed;
   top: 0;
-  max-width: 95vw;
+  max-width: 98vw;
   z-index: 1000;
 }
 
