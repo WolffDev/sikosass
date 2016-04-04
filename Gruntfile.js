@@ -30,7 +30,7 @@ module.exports = function(grunt) {
            'content-landing-figure.css':
            'sass/content-landing-figure.scss',
            'css/downloadAtt.css': 'sass/downloadAtt.scss',
-           'css/login.css': 'sass/login.scss'
+           'login/login-style.css': 'sass/login.scss'
          }
        }
      },

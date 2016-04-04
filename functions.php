@@ -91,7 +91,6 @@ function login_error_override() {
 }
 add_filter('login_errors', 'login_error_override');
 
-
 /*
  * Redirect users to the home page, instead of the dashboard.
  */
@@ -108,6 +107,39 @@ function admin_login_redirect( $redirect_to, $request, $user ) {
 	}
 }
 add_filter("login_redirect", "admin_login_redirect", 10, 3);
+
+/*
+ * Change URL for custom login logo/text.
+ */
+function custom_logo_login_url() {
+	return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'custom_logo_login_url' );
+
+function custom_logo_login_url_alt_text() {
+	return 'SIKO - Samvirkende Idrætsklubber I Odense';
+}
+add_filter( 'login_headertitle', 'custom_logo_login_url_alt_text' );
+
+/*
+ * Set 'remember me' status default.
+ */
+function login_checked_remember() {
+	add_filter( 'login_footer', 'rememberme_checked' );
+}
+add_action( 'init', 'login_checked_remember' );
+
+function rememberme_checked() {
+	echo "<script>document.getElementById('rememberme').checked = true;</script>";
+}
+
+/*
+ * Set path to custom login css.
+ */
+function custom_login_style() {
+	echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/login/login-style.css">';
+}
+add_action('login_head', 'custom_login_style');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
