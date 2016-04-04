@@ -7,7 +7,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			
+
 
 			<article id="posts">
 				<?php
@@ -20,43 +20,3 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 			</article>
-
-			<div class="reklame hide"></div>
-
-			<div class="calender">
-				<div class="cal-wrap">
-					<div class="cal">
-						<p>
-							Kalender tekst her.
-						</p>
-					</div>
-					<div class="cal">
-						<p>
-							Kanlender her.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="reklame hide"></div>
-
-			<div class="nyhedsBrev">
-				<div class="mailsub">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quas, nihil? Laudantium autem quae, rem aliquam iure quo eius voluptatum!</h2>
-				</div>
-				<div class="mailsub">
-					<?php
-						if( function_exists( 'mc4wp_show_form' ) ) {
-  				  	mc4wp_show_form();
-						}
-					?>
-				</div>
-			</div>
-
-			<div class="reklame hide last-item"></div>
-
-			</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_footer();
