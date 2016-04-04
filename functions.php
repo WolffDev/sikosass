@@ -82,6 +82,33 @@ function sikosass_setup() {
 endif;
 add_action( 'after_setup_theme', 'sikosass_setup' );
 
+
+/*
+ * Change the login error message to be more secure, and only displays a general  * error - not showing if it username or password that is wrong.
+ */
+function login_error_override() {
+	return 'Forkert indtastet login oplysninger.' . '<br>' . 'Prøv igen eller kontakt <a href="mailto:admin@siko.dk?subject=Jeg%20har%20glemt%20mit%20login&body=Hej%20admin,%0D%0AJeg%20har%20glemt%20mine%20login%20oplysninger.%0D%0A\'Indtast%20navn%20og%20email%20her\'">admin</a>.';
+}
+add_filter('login_errors', 'login_error_override');
+
+
+/*
+ * Redirect users to the home page, instead of the dashboard.
+ */
+function admin_login_redirect( $redirect_to, $request, $user ) {
+	global $user;
+	if (isset( $user->roles) && is_array( $user->roles ) ) {
+		if( in_array( "administrator", $user->roles ) ) {
+			return $redirect_to;
+		} else {
+			return home_url();
+		}
+	} else {
+		return $redirect_to;
+	}
+}
+add_filter("login_redirect", "admin_login_redirect", 10, 3);
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -148,6 +175,7 @@ function sikosass_scripts() {
 	wp_enqueue_script( 'sikosass-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'sikosass-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20120206', true );
+
 	wp_localize_script( 'sikosass-script', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'sikosass' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'sikosass' ) . '</span>',
