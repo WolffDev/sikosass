@@ -84,10 +84,72 @@ add_action( 'after_setup_theme', 'sikosass_setup' );
 
 
 /*
+ * Custom "nyheder" page
+ */
+function custom_pagination($numpages = '', $pagerange = '', $paged='') {
+
+  if (empty($pagerange)) {
+    $pagerange = 2;
+  }
+
+  /**
+   * This first part of our function is a fallback
+   * for custom pagination inside a regular loop that
+   * uses the global $paged and global $wp_query variables.
+   *
+   * It's good because we can now override default pagination
+   * in our theme, and use this function in default quries
+   * and custom queries.
+   */
+  global $paged;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+  if ($numpages == '') {
+    global $wp_query;
+    $numpages = $wp_query->max_num_pages;
+    if(!$numpages) {
+        $numpages = 1;
+    }
+  }
+
+  /**
+   * We construct the pagination arguments to enter into our paginate_links
+   * function.
+   */
+  $pagination_args = array(
+    'base'            => get_pagenum_link(1) . '%_%',
+    'format'          => 'page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => False,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => True,
+    'prev_text'       => __('&laquo;'),
+    'next_text'       => __('&raquo;'),
+    'type'            => 'plain',
+    'add_args'        => false,
+    'add_fragment'    => ''
+  );
+
+  $paginate_links = paginate_links($pagination_args);
+
+  if ($paginate_links) {
+    echo "<nav class='custom-pagination'>";
+      echo "<span class='page-numbers page-num'>Side " . $paged . " af " . $numpages . "</span><br>";
+      echo $paginate_links;
+    echo "</nav>";
+  }
+
+}
+
+
+/*
  * Change the login error message to be more secure, and only displays a general  * error - not showing if it username or password that is wrong.
  */
 function login_error_override() {
-	return 'Forkert indtastet login oplysninger.' . '<br>' . 'Prøv igen eller kontakt <a href="mailto:admin@siko.dk?subject=Jeg%20har%20glemt%20mit%20login&body=Hej%20admin,%0D%0AJeg%20har%20glemt%20mine%20login%20oplysninger.%0D%0A\'Indtast%20navn%20og%20email%20her\'">admin</a>.';
+	return 'Forkert login oplysninger.' . '<br>' . 'Prøv igen eller kontakt <a href="mailto:admin@siko.dk?subject=Jeg%20har%20glemt%20mit%20login&body=Hej%20admin,%0D%0AJeg%20har%20glemt%20mine%20login%20oplysninger.%0D%0A\'Indtast%20navn%20og%20email%20her\'">admin</a>.';
 }
 add_filter('login_errors', 'login_error_override');
 

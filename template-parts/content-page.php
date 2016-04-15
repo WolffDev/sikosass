@@ -13,7 +13,7 @@
 	<header class="entry-header">
 		<?php $image_id = get_post_thumbnail_id(); $image_url = wp_get_attachment_image_src($image_id,'post', true); ?>
 		<div class="post-img figure-img" style="background-image: url(<?php echo $image_url[0];?>);"></div>
-		
+
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
@@ -33,7 +33,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'sikosass' ),
+					esc_html__( 'Rediger %s', 'sikosass' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',
