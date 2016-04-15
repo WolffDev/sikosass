@@ -60,10 +60,10 @@
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sikosass' ); ?></a>
 			<header id="masthead" class="site-header" role="banner">
-				<div class="headerslider">
+				<div class="headerslider hide-small">
 				 <?php if ( is_front_page() || is_home()  ) {
-					 echo do_shortcode('[sp_responsiveslider design="design-1" width="1024" first_slide="1" height="350" effect="slide" pagination="true" navigation="true" speed="6000" autoplay="true" autoplay_interval="8000"]'); }?>
-				 </div>
+					 echo do_shortcode('[sp_responsiveslider design="design-1" width="1024" first_slide="1" height="420" effect="slide" pagination="true" navigation="true" speed="6000" autoplay="true" autoplay_interval="8000"]'); }?>
+				</div>
 
 
 	 			<!-- <div class="site-branding<?php if ( !is_front_page() ) { echo ' screen-reader-text'; } ?>">

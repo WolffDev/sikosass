@@ -73,6 +73,7 @@
 	.main-navigation ul {
 		@include flex;
 	}
+
 }
 
 @media screen and (max-width: $break__mobile) {
@@ -213,4 +214,15 @@
 	position: fixed !important;
 	top: 75px !important;
 	transition: all 1.5s ease-in-out;
+}
+@media screen and (max-width: $break__nav_post) {
+	.hide-small {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $break__nav_post) {
+	.hide-big {
+		display: none;
+	}
 }

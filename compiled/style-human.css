@@ -1018,6 +1018,7 @@ object {
   display: block;
   text-decoration: none;
   z-index: 100;
+  position: absolute;
 }
 
 .site-firstletter {
@@ -1076,6 +1077,12 @@ object {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1036px) {
+  #page {
+    box-shadow: none;
+    max-width: 100%;
+  }
+}
 img.alignright,
 img.alignleft,
 img.aligncenter {
@@ -1134,6 +1141,10 @@ div.featured-image {
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.single-post-img {
+  background-size: contain;
 }
 
 /*--------------------------------------------------------------
@@ -1384,4 +1395,15 @@ div.featured-image {
   position: fixed !important;
   top: 75px !important;
   transition: all 1.5s ease-in-out;
+}
+
+@media screen and (max-width: 650px) {
+  .hide-small {
+    display: none;
+  }
+}
+@media screen and (min-width: 650px) {
+  .hide-big {
+    display: none;
+  }
 }

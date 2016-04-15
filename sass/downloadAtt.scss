@@ -2,7 +2,11 @@
 @import "mixins/mixins-master";
 
 .download-attachments {
+  margin-top: 40px;
   position: relative;
+  .download-title {
+    @include font-size(1.8);  
+  }
   .attachment-date {
     margin-top: 10px;
   }
@@ -16,12 +20,14 @@
     margin: 0;
     position: relative;
     li {
+      position: relative;
+      margin: 20px 0 50px;
       display: flex;
       flex-flow: column wrap;
       width: 100%;
       justify-content: space-around;
       h4 {
-        margin: 0 0 1em;
+        margin: 0;
       }
     }
     .attachment-description {

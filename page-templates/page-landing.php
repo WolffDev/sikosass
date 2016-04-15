@@ -108,6 +108,7 @@ get_header(); ?>
 				?>
 				<?php
 				endwhile; // End of the loop.
+				wp_reset_postdata();
 				?>
 			</article>
 

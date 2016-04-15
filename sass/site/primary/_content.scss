@@ -3,6 +3,12 @@
   max-width: 98vw;
   margin: 0 auto;
 }
+@media screen and (max-width: $break__medium) {
+  #page {
+		box-shadow: none;
+		max-width: 100%;
+	}
+}
 
 img.alignright,
 img.alignleft,
@@ -61,4 +67,8 @@ div.featured-image {
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.single-post-img {
+  background-size: contain;
 }
