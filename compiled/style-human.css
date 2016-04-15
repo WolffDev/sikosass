@@ -1068,6 +1068,25 @@ object {
   }
 }
 
+.employ {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  .employ {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.employ-img img {
+  border-radius: 50%;
+}
+
 /*--------------------------------------------------------------
 ## Content
 --------------------------------------------------------------*/
@@ -1391,6 +1410,11 @@ div.featured-image {
   z-index: 1000;
 }
 
+@media screen and (max-width: 1036px) {
+  .navbar-fixed {
+    max-width: 100%;
+  }
+}
 .site-logo-fixed {
   position: fixed !important;
   top: 75px !important;

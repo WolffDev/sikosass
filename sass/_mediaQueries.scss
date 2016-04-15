@@ -210,6 +210,11 @@
 	max-width: 98vw;
 	z-index: 1000;
 }
+@media screen and (max-width: $break__medium) {
+	.navbar-fixed {
+		max-width: 100%;
+	}
+}
 .site-logo-fixed {
 	position: fixed !important;
 	top: 75px !important;

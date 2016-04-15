@@ -21,6 +21,14 @@
   }
 }
 
-.footer-info:nth-child(1n+2) {
-  
+.employ {
+  @include flex(row, wrap, flex-start);
+  padding-bottom: 30px;
+  @media screen and (max-width: $break__extra_medium) {
+    @include flex(column);
+    align-items: center;
+  }
+}
+.employ-img img {
+  border-radius: 50%;
 }

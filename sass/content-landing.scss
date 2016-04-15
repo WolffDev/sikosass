@@ -108,7 +108,7 @@ h2.site-description {
 .entry-wrap {
   width: 500px;
   max-height: 400px;
-  padding: 0 40px 0;
+  padding: 0 20px 0;
   background-color: $color__background-area;
   h2 {
     margin-bottom: 0;
@@ -139,6 +139,9 @@ h2.site-description {
 }
 #posts div:last-child {
   padding-bottom: 105px;
+  @media screen and (max-width: $break__extra_medium) {
+    padding-bottom: 0;
+  }
 }
 
 #posts {

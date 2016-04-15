@@ -26,11 +26,25 @@
 				</p>
 			</div>
 			<div class="footer-info">
-				<div class="">
-					asdasd
+				<div class="employ">
+					<div class="employ-img">
+						<img src="<?php bloginfo('template_directory');?>/inc/img/preben_siko.png">
+					</div>
+					<div class="employ-info">
+						<p>Preben Rasmussen<br>Sekretariatsleder<br>
+							<a href="mailto:preben@siko.dk">preben@siko.dk</a>
+						</p>
+					</div>
 				</div>
-				<div class="">
-					asdasd
+				<div class="employ">
+					<div class="employ-img">
+						<img src="<?php bloginfo('template_directory');?>/inc/img/anette_siko.png">
+					</div>
+					<div class="employ-info">
+						<p>Anette Dalgård<br>Sekretær<br>
+							<a href="mailto:siko@siko.dk">siko@siko.dk</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div><!-- .site-info -->
