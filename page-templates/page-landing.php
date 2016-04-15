@@ -110,6 +110,11 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				wp_reset_postdata();
 				?>
+				<a href="/nyheder">
+					<div class="jump-nyhed more-news">
+						<h1>Læs ældre nyheder</h1>
+					</div>
+				</a>
 			</article>
 
 			<div class="reklame hideRek"></div>

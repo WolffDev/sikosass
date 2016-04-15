@@ -137,12 +137,12 @@ h2.site-description {
     text-align: left;
   }
 }
-#posts div:last-child {
-  padding-bottom: 105px;
-  @media screen and (max-width: $break__extra_medium) {
-    padding-bottom: 0;
-  }
-}
+// #posts div:last-child {
+//   padding-bottom: 105px;
+//   @media screen and (max-width: $break__extra_medium) {
+//     padding-bottom: 0;
+//   }
+// }
 
 #posts {
   padding-top: 105px;
@@ -239,4 +239,8 @@ input[type='submit'] {
   @include font-size(1.4);
   background-color: $color__background-area;
   border-radius: 5px;
+}
+
+#posts .more-news {
+  margin: 80px auto;
 }
