@@ -72,3 +72,29 @@ div.featured-image {
 .single-post-img {
   background-size: contain;
 }
+
+.arkiv-nyhed-titel {
+  margin-bottom: 0px;
+}
+
+.entry-content hr {
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+  color: #333;
+  text-align: center;
+}
+.entry-content hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: $color__background-content;
+}
+
+.nyheder-pagination {
+  @include flex(row, wrap, center);
+  @include font-size(1.2);
+}

@@ -126,8 +126,8 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
     'end_size'        => 1,
     'mid_size'        => $pagerange,
     'prev_next'       => True,
-    'prev_text'       => __('&laquo;'),
-    'next_text'       => __('&raquo;'),
+    'prev_text'       => "Forrige side&nbsp;",
+    'next_text'       => "&nbsp;Næste side",
     'type'            => 'plain',
     'add_args'        => false,
     'add_fragment'    => ''

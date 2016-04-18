@@ -7,6 +7,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="entry-content">
+				<h1>SIKO's nyhedsarkiv</h1>
 
 			<?php
 
@@ -15,7 +17,7 @@ get_header(); ?>
 			  $custom_args = array(
 			      'post_type' => 'post',
 						'category_name' => 'nyheder',
-			      'posts_per_page' => 5,
+			      'posts_per_page' => 6,
 			      'paged' => $paged
 			    );
 
@@ -26,25 +28,29 @@ get_header(); ?>
 			    <!-- the loop -->
 			    <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
 			      <article class="loop">
-			        <h3><?php the_title(); ?></h3>
+			        <a href="<?php the_permalink(); ?>"><h3 class="arkiv-nyhed-titel"><?php the_title(); ?></h3></a>
 							<span><?php sikosass_posted_on(); ?></span>
 			        <div class="content">
 			          <?php the_excerpt(); ?>
 			        </div>
 			      </article>
+						<hr>
 			    <?php endwhile; ?>
 			    <!-- end of the loop -->
 
 			    <!-- pagination here -->
-			    <?php
-			        custom_pagination($custom_query->max_num_pages,"",$paged);
-			    ?>
+					<div class="nyheder-pagination">
+				    <?php
+				        custom_pagination($custom_query->max_num_pages,"",$paged);
+				    ?>
+					</div>
 
 			  <?php wp_reset_postdata(); ?>
 
 			  <?php else:  ?>
 			    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			  <?php endif; ?>
+				</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

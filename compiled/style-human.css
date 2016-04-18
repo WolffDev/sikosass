@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: SIKO sassy
 Theme URI: https://github.com/WolffDev/sikosass
@@ -1164,6 +1165,36 @@ div.featured-image {
 
 .single-post-img {
   background-size: contain;
+}
+
+.arkiv-nyhed-titel {
+  margin-bottom: 0px;
+}
+
+.entry-content hr {
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+  color: #333;
+  text-align: center;
+}
+
+.entry-content hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: #00af62;
+}
+
+.nyheder-pagination {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: 19.2px;
+  font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------------
