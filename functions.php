@@ -145,6 +145,8 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 }
 
 
+
+
 /*
  * Change the login error message to be more secure, and only displays a general  * error - not showing if it username or password that is wrong.
  */
@@ -231,7 +233,37 @@ function simcal_remove_edit_post_link( $link, $id ) {
 }
 add_filter( 'edit_post_link', 'simcal_remove_edit_post_link', 10, 2 );
 
-
+/*
+ * Ads, random image with url link tekst
+ */
+ function display_random_img($array) {
+	 $key = rand(0 , count($array) -1);
+	 $link_url = $array[$key]['url'];
+	 $alt_tag = $array[$key]['alt'];
+	 $random_img_url = $array[$key]['img_url'];
+	//  list($img_width, $img_height) = getimagesize($random_img_url);
+	 // echo "<a href=\"$link_url\"><img src=\"$random_img_url\" width=\"$img_width\" height=\"$img_height\" alt=\"$alt_tag\" /></a>";
+	 echo "<a href=\"$link_url\"><img src=\"$random_img_url\" alt=\"$alt_tag\" /></a>";
+ }
+ // Edit the following values accordingly
+ $ads_array = array(
+	 array(
+	 	'url' => 'https://www.sparnord.dk/',
+	 	'alt' => 'Spar Nord logo',
+	 	'img_url' => get_template_directory_uri() . '/inc/img/sparnord_com.png'
+	 ),
+	 array(
+	 	'url' => 'http://www.carlsberg.dk/',
+	 	'alt' => 'Carslberg logo',
+	 	'img_url' => get_template_directory_uri() . '/inc/img/carlsberg_com.png'
+	 ),
+	 array(
+	 	'url' => 'http://www.intersport.dk/',
+	 	'alt' => 'Intersport logo',
+	 	'img_url' => get_template_directory_uri() . '/inc/img/intersport_com.png'
+	 )
+ );
+ // display_random_img($ads_array); to display 1 random entry
 
 /**
  * Register widget area.
@@ -263,12 +295,18 @@ function sikosass_scripts() {
 
 	wp_enqueue_style( 'sikosass-layout-figure-style' , get_template_directory_uri() . '/content-landing-figure.css' );
 
+	if ( !is_front_page() || !is_home() ) {
+		wp_enqueue_style( 'sikosass-download' , get_template_directory_uri() . '/css/downloadAtt.css' );
+	}
+
 	// wp_enqueue_style( 'sikosass-fontawesome' , 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 
 
 	wp_enqueue_script( 'sikosass-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'sikosass-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20120206', true );
+
+	wp_enqueue_script( 'sikosass-analytics', get_template_directory_uri() . '/js/analytics.js', array( 'jquery' ), '20120206', true );
 
 	wp_localize_script( 'sikosass-script', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'sikosass' ) . '</span>',
@@ -277,9 +315,7 @@ function sikosass_scripts() {
 
 	wp_enqueue_script( 'sikosass-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	if ( !is_front_page() || !is_home() ) {
-		wp_enqueue_style( 'sikosass-download' , get_template_directory_uri() . '/css/downloadAtt.css' );
-	}
+
 
 	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	// 	wp_enqueue_script( 'comment-reply' );

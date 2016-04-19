@@ -97,7 +97,11 @@ get_header(); ?>
 				</div>
 			</a>
 
-			<div class="reklame hideRek"></div>
+			<div class="hideRek reklame">
+				<a href="http://www.carlsberg.dk/">
+					<img src="<?php bloginfo('template_directory');?>/inc/img/carlsberg_com.png" alt="Carlsberg logo" />
+				</a>
+			</div>
 
 			<article id="posts">
 				<?php
@@ -117,7 +121,11 @@ get_header(); ?>
 				</a>
 			</article>
 
-			<div class="reklame hideRek"></div>
+			<div class="hideRek reklame">
+				<a href="http://www.intersport.dk/">
+					<img src="<?php bloginfo('template_directory');?>/inc/img/intersport_com.png" alt="Intersport logo" />
+				</a>
+			</div>
 
 			<div class="calender">
 				<div class="cal-wrap">
@@ -126,11 +134,16 @@ get_header(); ?>
 				</div>
 			</div>
 			<div id="jump"></div>
-			<div class="reklame hideRek"></div>
+
+			<div class="hideRek reklame">
+				<a href="http://www.sparnord.dk/">
+					<img src="<?php bloginfo('template_directory');?>/inc/img/sparnord_com.png" alt="Sparnord logo" />
+				</a>
+			</div>
 
 			<div class="nyhedsBrev">
 				<div class="mailsub">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quas, nihil? Laudantium autem quae, rem aliquam iure quo eius voluptatum!</h2>
+					<h2>Tilmeld dig SIKO's nyhedsbrev og få de seneste nyheder direkte fra SIKO's kontor!</h2>
 				</div>
 				<div class="mailsub">
 					<?php
@@ -141,7 +154,9 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="reklame hideRek last-item"></div>
+			<div class="hideRek reklame last-item">
+				<?php display_random_img($ads_array); ?>
+			</div>
 
 			</main><!-- #main -->
 	</div><!-- #primary -->

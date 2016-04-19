@@ -28,6 +28,10 @@
     @include flex(column);
     align-items: center;
   }
+  .employ-info {
+    display: flex;
+    align-items: center;
+  }
 }
 .employ-img img {
   border-radius: 50%;

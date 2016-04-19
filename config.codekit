@@ -201,6 +201,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/inc\/img\/carlsberg_com.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28893,
+		"inputAbbreviatedPath": "\/inc\/img\/carlsberg_com.png",
+		"outputAbbreviatedPath": "\/inc\/img\/carlsberg_com.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/inc\/img\/default-post-big.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -256,6 +267,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/inc\/img\/intersport_com.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4278,
+		"inputAbbreviatedPath": "\/inc\/img\/intersport_com.png",
+		"outputAbbreviatedPath": "\/inc\/img\/intersport_com.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/inc\/img\/preben_siko.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -274,6 +296,28 @@
 		"initialSize": 37133,
 		"inputAbbreviatedPath": "\/inc\/img\/preben_siko.png",
 		"outputAbbreviatedPath": "\/inc\/img\/preben_siko.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/inc\/img\/sparnord_com.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6595,
+		"inputAbbreviatedPath": "\/inc\/img\/sparnord_com.jpg",
+		"outputAbbreviatedPath": "\/inc\/img\/sparnord_com.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/inc\/img\/sparnord_com.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10114,
+		"inputAbbreviatedPath": "\/inc\/img\/sparnord_com.png",
+		"outputAbbreviatedPath": "\/inc\/img\/sparnord_com.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -315,6 +359,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/js\/analytics.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/analytics.js",
+		"outputAbbreviatedPath": "\/js\/analytics-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/customizer.js": {
 		"fileType": 64,
@@ -434,6 +489,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page-templates\/page-nyheder.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-templates\/page-test.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-templates\/page-test.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1257,14 +1321,38 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/test.php": {
-		"fileType": 8192,
+	"\/test\/image_1.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/test.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 110195,
+		"inputAbbreviatedPath": "\/test\/image_1.jpg",
+		"outputAbbreviatedPath": "\/test\/image_1.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/test\/image_2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110195,
+		"inputAbbreviatedPath": "\/test\/image_2.jpg",
+		"outputAbbreviatedPath": "\/test\/image_2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/test\/image_3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110195,
+		"inputAbbreviatedPath": "\/test\/image_3.jpg",
+		"outputAbbreviatedPath": "\/test\/image_3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		}
 	},
 "hooks": [

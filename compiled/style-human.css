@@ -1083,6 +1083,10 @@ object {
     align-items: center;
   }
 }
+.employ .employ-info {
+  display: flex;
+  align-items: center;
+}
 
 .employ-img img {
   border-radius: 50%;
@@ -1380,21 +1384,21 @@ div.featured-image {
     padding: 5px;
   }
 }
-@media screen and (max-width: 1036px) {
-  .hideRek {
-    display: none;
+@media screen and (max-width: 650px) {
+  main .jump-nyhed {
+    margin: 0 auto 105px;
   }
 }
 @media screen and (max-width: 500px) {
-  .entry-header {
+  #posts .entry-header {
     width: 100%;
     height: 300px;
   }
-  .entry-header figure {
+  #posts .entry-header figure {
     width: 100%;
     height: 100%;
   }
-  .entry-header .post-img {
+  #posts .entry-header .post-img {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -1402,11 +1406,8 @@ div.featured-image {
 }
 @media screen and (max-width: 1036px) {
   main .calender {
+    margin: 50px 0 70px;
     padding: 0;
-  }
-
-  main .jump-nyhed {
-    margin: 0 auto;
   }
 
   main .nyhedsBrev {

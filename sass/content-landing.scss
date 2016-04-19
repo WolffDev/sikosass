@@ -149,11 +149,18 @@ h2.site-description {
 }
 
 .reklame {
-  width: 728px;
-  height: 90px;
+  max-width: 728px;
   margin: 0 auto;
-  background-color: #c1c1c1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  a {
+    display: flex;
+    align-items: center;
+    img {
+      max-height: 130px;
+      max-width: 100%;
+    }
+  }
 }
 
 .calender {
@@ -180,11 +187,11 @@ h2.site-description {
 }
 
 .last-item {
-  margin-bottom: 105px;
+  margin: 100px auto 0;
 }
 
 .mailsub {
-margin: 0 auto;
+margin: 55px auto 0;
   padding: 0 40px 0;
   max-width: 700px;
   @media screen and (max-width: $break__small) {
@@ -192,11 +199,16 @@ margin: 0 auto;
   }
 }
 
-input[type='email'] {
+input[type='email'],
+input[type='text'] {
   background-color: $color__footer;
   color: $color__text-main;
   padding-left: 10px;
   width: 59%;
+}
+input[type='text'] {
+  width: 49.5%;
+  margin-bottom: 4px;
 }
 
 
@@ -215,14 +227,14 @@ input[type='submit'] {
 }
 
 input[type='email'],
-input[type='submit'] {
+input[type='submit'],
+input[type='text'] {
   color: $color__text-main;
   @include font-size(1.5);
   font: $font__second;
   height: 60px;
   border: solid 2px #000;
   border-radius: 0;
-  margin: 0;
   &::-webkit-input-placeholder,
   -ms-input-placeholder,
   -ms-input-placeholder {
