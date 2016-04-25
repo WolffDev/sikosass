@@ -48,7 +48,7 @@ get_header(); ?>
 			  <?php wp_reset_postdata(); ?>
 
 			  <?php else:  ?>
-			    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+			    <p><?php _e( 'Der var intet indhold på det du søgte efter.' ); ?></p>
 			  <?php endif; ?>
 				</div>
 

@@ -44,14 +44,3 @@
   z-index: 100;
   position: absolute;
 }
-
-.site-firstletter {
-  font-family: "Roboto", sans-serif;
-  @include font-size(1.2);
-  text-align: center;
-  &:hover,
-  &:focus {
-    background: $color__background-content;
-    color: $color__text-main;
-  }
-}
