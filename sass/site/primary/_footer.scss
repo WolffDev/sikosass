@@ -1,5 +1,8 @@
 .site-footer {
   background-color: $color__footer;
+  table {
+    width: 50%;
+  }
 }
 .site-info {
   max-width: 1000px;

@@ -43,7 +43,7 @@ get_header(); ?>
 							</g>
 						</svg>
 					</div>
-					<h3 class="intro-text">SIKO hjælper idrætsforeninger i Odense. Vi kan hjælpe jer med tilskud/anlæg/fundraising udviklingsprojekter og iøvright alt der har med jeres forening at gøre.</h3>
+					<h3 class="intro-text">SIKO hjælper idrætsforeninger i Odense. Vi kan hjælpe jer med tilskud, anlæg, fundraising, udviklingsprojekter og iøvrigt alt der har med jeres forening at gøre.</h3>
 				</div>
 
 				<div class="feature">

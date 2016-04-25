@@ -22,9 +22,34 @@
 					Stadionvej 50<br>
 					5200 Odense V<br><br>
 					<a href="mailto:siko@siko.dk?Subject=Kontakt%20til%20SIKO">siko@siko.dk</a><br>
-					<a href="tel:66148625">66 14 86 25</a>
+					<a href="tel:66148625">66 14 86 25</a><br><br>
+					Åbningstider:
 				</p>
+				<table>
+				  <thead>
+				    <tr>
+				      <td>Mandag:</td>
+				      <td>08:00 - 15:00</td>
+				    </tr>
+						<tr>
+							<td>Tirsdag:</td>
+							<td>08:00 - 15:00</td>
+						</tr>
+						<tr>
+				      <td>Onsdag:</td>
+				      <td>08:00 - 15:00</td>
+				    </tr>
+						<tr>
+				      <td>Torsdag:</td>
+				      <td>08:00 - 15:00</td>
+				    </tr>
+						<tr>
+				      <td>Fredag:</td>
+				      <td>08:00 - 13:00</td>
+				    </tr>
+				</table>
 			</div>
+
 			<div class="footer-info">
 				<div class="employ">
 					<div class="employ-img">

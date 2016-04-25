@@ -46,7 +46,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<footer class="entry-footer">
-		<?php sikosass_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

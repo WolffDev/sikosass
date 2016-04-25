@@ -47,6 +47,7 @@
   }
   h3 {
     padding: 0 20px 0;
+    font-family: $font__main;
   }
 }
 
@@ -156,9 +157,14 @@ h2.site-description {
   a {
     display: flex;
     align-items: center;
+    padding: 20px;
     img {
       max-height: 130px;
       max-width: 100%;
+    }
+    &:hover {
+      background-color: $color__link-hover;
+      border-radius: 10px;
     }
   }
 }
