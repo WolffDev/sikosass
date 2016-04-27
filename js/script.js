@@ -16,24 +16,24 @@ jQuery(document).ready(function($) {
 
   var position, direction, previous;
 
-  	$(window).scroll(function() {
-  		if( $(this).scrollTop() >= position ) {
-  			direction ='down';
-  			if(direction !== previous) {
-  				$('.menu-toggle').addClass('hide');
-
-  				previous =direction;
-  			}
-  		} else {
-  			direction = 'up';
-  			if('direction' !== previous) {
-  				$('.menu-toggle').removeClass('hide');
-
-  				previous = direction;
-  			}
-  		}
-  		position = $(this).scrollTop();
-  	});
+  	// $(window).scroll(function() {
+  	// 	if( $(this).scrollTop() >= position ) {
+  	// 		direction ='down';
+  	// 		if(direction !== previous) {
+  	// 			$('.menu-toggle').addClass('hide');
+    //
+  	// 			previous =direction;
+  	// 		}
+  	// 	} else {
+  	// 		direction = 'up';
+  	// 		if('direction' !== previous) {
+  	// 			$('.menu-toggle').removeClass('hide');
+    //
+  	// 			previous = direction;
+  	// 		}
+  	// 	}
+  	// 	position = $(this).scrollTop();
+  	// });
 
     function initMainNavigation( container ) {
 		// Add dropdown toggle that display child menu items.
@@ -75,19 +75,19 @@ jQuery(document).ready(function($) {
   if ($(window).scrollTop() + adminHeight > totalHeight && window.innerWidth > 872) {
    $('.main-navigation').addClass('navbar-fixed').css('marginTop',adminHeight);
    $('body').css('marginTop',navHeight);
-   $('.site-logo a').css({
-     'position' : 'fixed',
-     'top' : navHeight + adminHeight + 16 + 'px',
-     'transition' : 'all 1.5s ease-in-out'
-   });
+  //  $('.site-logo a').css({
+  //    'position' : 'fixed',
+  //    'top' : navHeight + adminHeight + 16 + 'px',
+  //    'transition' : 'all 1.5s ease-in-out'
+  //  });
    }
    else {
      $('.main-navigation').removeClass('navbar-fixed').css('marginTop',0);
      $('body').css('marginTop','0');
-     $('.site-logo a').css({
-       'position' : 'absolute',
-       'top' : adminHeight + 16 + 'px'
-     })
+    //  $('.site-logo a').css({
+    //    'position' : 'absolute',
+    //    'top' : adminHeight + 16 + 'px'
+    //  })
    }
   });
 

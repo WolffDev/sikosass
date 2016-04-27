@@ -62,7 +62,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="headerslider hide-small">
 				 <?php if ( is_front_page() || is_home()  ) {
-					 echo do_shortcode('[sp_responsiveslider design="design-1" width="1024" first_slide="1" height="420" effect="slide" pagination="true" navigation="true" speed="6000" autoplay="true" autoplay_interval="8000"]'); }?>
+					 echo do_shortcode('[sp_responsiveslider design="design-1" width="1024" first_slide="1" height="400" effect="slide" pagination="true" navigation="true" speed="6000" autoplay="true" autoplay_interval="8000"]'); }?>
 				</div>
 
 

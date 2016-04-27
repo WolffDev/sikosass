@@ -19,7 +19,7 @@
 				<p>
 					SIKO<br>
 					Samvirkende Idrætsklubber i Odense<br><br>
-					Stadionvej 50<br>
+					Stadionvej 50, opgang C<br>
 					5200 Odense V<br><br>
 					<a href="mailto:siko@siko.dk?Subject=Kontakt%20til%20SIKO">siko@siko.dk</a><br>
 					<a href="tel:66148625">66 14 86 25</a><br><br>
@@ -66,7 +66,7 @@
 						<img src="<?php bloginfo('template_directory');?>/inc/img/anette_siko.png">
 					</div>
 					<div class="employ-info">
-						<p>Anette Dalgård<br>Sekretær<br>
+						<p>Anette Dalgaard<br>Sekretær<br>
 							<a href="mailto:siko@siko.dk">siko@siko.dk</a>
 						</p>
 					</div>

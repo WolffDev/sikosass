@@ -43,7 +43,23 @@ get_header(); ?>
 							</g>
 						</svg>
 					</div>
-					<h3 class="intro-text">SIKO hjælper idrætsforeninger i Odense. Vi kan hjælpe jer med tilskud, anlæg, fundraising, udviklingsprojekter og iøvrigt alt der har med jeres forening at gøre.</h3>
+					<h3 class="intro-text">SIKO hjælper idrætsforeninger i Odense. Vi kan hjælpe jer med tilskud, anlæg, fundraising, projekter og iøvrigt alt der har med jeres forening at gøre.</h3>
+				</div>
+
+				<div class="feature">
+					<div class="logo infoi">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-52 3 395 395" style="enable-background:new -52 3 395 395;" xml:space="preserve">
+							<g>
+								<path d="M180.2,291.8h-5.4l0-121.6c-0.2-8.3-6.9-15-15.3-15h-48.8c-8.4,0-15.3,6.8-15.3,15.3c0,8.4,6.8,15.3,15.3,15.3h8.4v106
+									h-5.4c-8.4,0-15.3,6.8-15.3,15.3c0,8.4,6.8,15.3,15.3,15.3h66.4c8.4,0,15.3-6.8,15.3-15.3C195.5,298.7,188.7,291.8,180.2,291.8z"/>
+								<circle cx="147" cy="110.7" r="32.1"/>
+								<path d="M261,3H30c-45.2,0-82,36.8-82,82v231c0,45.2,36.8,82,82,82h231c45.2,0,82-36.8,82-82V85C343,39.8,306.2,3,261,3z M328,316
+									c0,36.9-30.1,67-67,67H30c-36.9,0-67-30.1-67-67V85c0-36.9,30.1-67,67-67h231c36.9,0,67,30.1,67,67V316z"/>
+							</g>
+						</svg>
+
+					</div>
+					<h3 class="intro-text">SIKO sætter den idrætspolitiske dagsorden. Vi markerer os med aktuelle idrætspolitiske synspunkter og har den opdaterede viden på alle idrætpolitiske temaer. </h3>
 				</div>
 
 				<div class="feature">
@@ -69,22 +85,6 @@ get_header(); ?>
 									s6.8,3,6.8,6.8v5.4c10.9,2.2,17.1,9.4,19.3,15.8C348,36.8,346.1,40.6,342.5,41.8z"/>
 							</g>
 						</svg>
-					</div>
-					<h3 class="intro-text">SIKO sætter den idrætspolitiske dagsorden. Vi markerer os med aktuelle idrætspolitiske synspunkter og har den opdaterede viden på alle idrætpolitiske temaer. </h3>
-				</div>
-
-				<div class="feature">
-					<div class="logo infoi">
-						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-52 3 395 395" style="enable-background:new -52 3 395 395;" xml:space="preserve">
-							<g>
-								<path d="M180.2,291.8h-5.4l0-121.6c-0.2-8.3-6.9-15-15.3-15h-48.8c-8.4,0-15.3,6.8-15.3,15.3c0,8.4,6.8,15.3,15.3,15.3h8.4v106
-									h-5.4c-8.4,0-15.3,6.8-15.3,15.3c0,8.4,6.8,15.3,15.3,15.3h66.4c8.4,0,15.3-6.8,15.3-15.3C195.5,298.7,188.7,291.8,180.2,291.8z"/>
-								<circle cx="147" cy="110.7" r="32.1"/>
-								<path d="M261,3H30c-45.2,0-82,36.8-82,82v231c0,45.2,36.8,82,82,82h231c45.2,0,82-36.8,82-82V85C343,39.8,306.2,3,261,3z M328,316
-									c0,36.9-30.1,67-67,67H30c-36.9,0-67-30.1-67-67V85c0-36.9,30.1-67,67-67h231c36.9,0,67,30.1,67,67V316z"/>
-							</g>
-						</svg>
-
 					</div>
 					<h3 class="intro-text">SIKO samrbejder med Odense kommune på alle områder, der har relevans for vores medlemsforeninger, f.eks i forhold til tilskud, lokaler, medlemsrekruttering, fundraising og udvikling.</h3>
 				</div>
@@ -130,7 +130,7 @@ get_header(); ?>
 			<div class="calender">
 				<div class="cal-wrap">
 					<h1>SIKO Kalender</h1>
-					<?php echo do_shortcode('[calendar id="1818"]') ?>
+					<?php echo do_shortcode('[calendar id="116"]') ?>
 				</div>
 			</div>
 			<div id="jump"></div>

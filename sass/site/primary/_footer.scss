@@ -2,6 +2,9 @@
   background-color: $color__footer;
   table {
     width: 50%;
+    @media screen and (max-width: $break__mobile) {
+      width: 100%;
+    }
   }
 }
 .site-info {

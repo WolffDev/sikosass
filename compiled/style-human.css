@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Ubuntu700';
+  font-family: 'Ubuntu-Bold';
   font-style: normal;
   font-weight: 700;
   src: url(inc/fonts/ubuntu700.woff2);
@@ -293,7 +293,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Ubuntu700", sans-serif, sans-serif;
+  font-family: "Ubuntu-Bold", sans-serif, sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a {
@@ -1033,6 +1033,11 @@ object {
 .site-footer table {
   width: 50%;
 }
+@media screen and (max-width: 872px) {
+  .site-footer table {
+    width: 100%;
+  }
+}
 
 .site-info {
   max-width: 1000px;
@@ -1091,7 +1096,7 @@ object {
 --------------------------------------------------------------*/
 #page {
   box-shadow: 8px 0 15px -4px rgba(42, 38, 38, 0.54), -8px 0 8px -4px rgba(42, 38, 38, 0.54);
-  max-width: 98vw;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -1342,7 +1347,7 @@ div.featured-image {
   }
 
   .toggled .menu-toggle.hide {
-    bottom: 1em;
+    bottom: 2em;
   }
 
   .main-navigation.toggled {
@@ -1432,7 +1437,7 @@ div.featured-image {
 .navbar-fixed {
   position: fixed;
   top: 0;
-  max-width: 98vw;
+  max-width: 100%;
   z-index: 1000;
 }
 

@@ -114,7 +114,7 @@
 	}
 
 	.toggled .menu-toggle.hide {
-		bottom: 1em;
+		bottom: 2em;
 	}
 
 	.main-navigation.toggled {
@@ -206,7 +206,7 @@
 .navbar-fixed {
 	position: fixed;
 	top: 0;
-	max-width: 98vw;
+	max-width: 100%;
 	z-index: 1000;
 }
 @media screen and (max-width: $break__medium) {

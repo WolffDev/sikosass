@@ -38,9 +38,13 @@
 
 .feature {
   width: 33%;
-  text-align: center;
+  text-align: left;
   @media screen and (max-width: $break__medium) {
-    width: 95vw;
+    width: 100%;
+    padding: 0 5em;
+    @media screen and (max-width: $break__nav_post) {
+      padding: 0;
+    }
     &:nth-child(n+2) {
       padding-top: 50px;
     }
@@ -123,6 +127,12 @@ h2.site-description {
   @include font-size(2.4);
   a:hover {
     color: $color__link-hover;
+  }
+  @media screen and (max-width: $break__extra_medium) {
+    @include font-size(1.8);
+  }
+  @media screen and (max-width: $break__extra_small) {
+    @include font-size(1.5);
   }
 }
 
