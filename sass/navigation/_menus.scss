@@ -48,7 +48,7 @@
 
 .main-navigation .current-menu-item > a,
 .main-navigation .current-menu-ancestor > a {
-	font-weight: 700;
+	border-bottom: 2px solid $color__background-body;
 }
 
 .main-navigation .nav-menu > ul > li:first-child,
