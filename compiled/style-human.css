@@ -587,11 +587,6 @@ a:hover, a:active {
   position: relative;
 }
 
-.main-navigation .current-menu-item > a,
-.main-navigation .current-menu-ancestor > a {
-  border-bottom: 2px solid #E9EAED;
-}
-
 .main-navigation .nav-menu > ul > li:first-child,
 .main-navigation .nav-menu > li:first-child {
   border-top: 0;
@@ -1162,7 +1157,7 @@ div.featured-image {
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 
 .single-post-img {

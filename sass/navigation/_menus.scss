@@ -46,10 +46,6 @@
 	position: relative;
 }
 
-.main-navigation .current-menu-item > a,
-.main-navigation .current-menu-ancestor > a {
-	border-bottom: 2px solid $color__background-body;
-}
 
 .main-navigation .nav-menu > ul > li:first-child,
 .main-navigation .nav-menu > li:first-child {
